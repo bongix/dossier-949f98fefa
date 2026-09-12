@@ -7,8 +7,13 @@ avec un besoin de calme, de regles explicites et de faible charge sociale.
 """
 import json
 import re
+import sys
 import unicodedata
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from collecte_jobslu import couper          # noqa: E402
+from langues import detecter, resume, accessible  # noqa: E402
 
 RACINE = Path(__file__).resolve().parent.parent
 SSM_NQ = 2771.33   # salaire social minimum non qualifie, 01.06.2026
@@ -213,6 +218,8 @@ def famille(offre):
 
 
 def evalue(offre):
+    offre["description"] = couper(offre.get("description", ""))
+    lg = detecter(offre["titre"] + " " + offre["description"])
     txt = norm(offre["titre"] + " " + offre["employeur"] + " " +
                offre.get("description", ""))
     titre = norm(offre["titre"])
@@ -250,7 +257,10 @@ def evalue(offre):
     prat += 2 if contrat == "Permanent" else 1 if contrat == "Contract" else 0
     if "Part Time" in offre.get("horaire", ""):
         prat += 2
-    if any(l in txt for l in LANGUES_DURES):
+    durs = {c for c, n in lg.items() if n == "requis"} - {"FR", "EN"}
+    if "LU" in durs:
+        prat -= 4
+    elif durs:
         prat -= 3
     if re.search(r"internship|student job|traineeship|apprentic", norm(contrat)):
         prat -= 3
@@ -268,6 +278,9 @@ def evalue(offre):
         "salaire_min": lo, "salaire_max": hi, "salaire_source": src,
         "famille": famille(offre),
         "secteur_public": pub,
+        "langues": lg,
+        "langues_resume": resume(lg),
+        "langues_ok": accessible(lg),
         "motifs": {k: v[:6] for k, v in motifs.items() if v},
         "signaux_negatifs": (m1 + m4 + m5)[:8],
     })

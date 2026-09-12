@@ -105,8 +105,23 @@ def detail(offre):
     offre["horaire"] = champ("Hours", "Apply Now|Share this job")
     offre["maj"] = champ("Last updated", "Contract Type|Hours|Apply Now")
     d = corps.find("Job Description")
-    offre["description"] = corps[d + len("Job Description"):d + 8000].strip() if d > 0 else corps[:6000]
+    txt = corps[d + len("Job Description"):d + 12000] if d > 0 else corps[:10000]
+    offre["description"] = couper(txt)
     return offre
+
+
+# Le formulaire de candidature de jobs.lu est colle a la fin de chaque annonce et
+# contient "Insert English/French/German/Luxembourgish Cover note" : sans coupe,
+# toute offre parait exiger quatre langues.
+FIN = ("Apply for this job", "Are you legally authorized", "Add default jobs.lu cover note",
+       "Cover Note", "First Name", "Send me similar jobs", "Report this job",
+       "Related Sectors:", "Related Locations:")
+
+
+def couper(txt):
+    fins = [txt.find(m) for m in FIN]
+    fins = [i for i in fins if i > 200]
+    return txt[:min(fins)].strip() if fins else txt.strip()
 
 
 def main():

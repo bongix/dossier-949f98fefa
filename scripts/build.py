@@ -136,6 +136,24 @@ ol.etapes>li::before{content:counter(e);position:absolute;left:0;top:0;width:30p
  place-items:center;font-size:14px;font-weight:640;font-variant-numeric:tabular-nums}
 ol.etapes>li b{display:block;margin-bottom:2px}
 .reco{font-size:12px;color:var(--accent-texte);font-weight:600}
+.lg{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.03em;padding:1px 6px;
+ border-radius:5px;margin-right:3px;border:1px solid transparent}
+.lg.requis{background:var(--accent);color:var(--carte)}
+.lg.choix{background:var(--chaud-doux);color:var(--chaud);border-color:var(--bord)}
+.lg.atout{background:transparent;color:var(--tres-doux);border-color:var(--bord)}
+.lg.vide{background:transparent;color:var(--tres-doux);font-weight:400;font-style:italic;border:0}
+.bandeau{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:10px 0 0}
+.bandeau a{font-size:13.5px;text-decoration:none;color:var(--accent-texte);
+ background:var(--accent-doux);padding:6px 13px;border-radius:99px;border:1px solid transparent}
+.bandeau a:hover{border-color:var(--accent)}
+.bandeau a[aria-current]{background:var(--accent);color:var(--carte);font-weight:600}
+.chiffres{display:grid;gap:12px;margin:22px 0}
+@media(min-width:640px){.chiffres{grid-template-columns:repeat(4,1fr)}}
+.chiffre{background:var(--carte);border:1px solid var(--bord);border-radius:var(--r);padding:16px 18px}
+.chiffre b{display:block;font-size:30px;line-height:1.1;font-variant-numeric:tabular-nums;
+ letter-spacing:-.02em;color:var(--accent-texte)}
+.chiffre span{display:block;font-size:14px;margin-top:5px}
+.chiffre em{display:block;font-size:12.5px;color:var(--tres-doux);font-style:normal;margin-top:3px}
 """
 
 
@@ -287,6 +305,10 @@ def main():
  prestige ou par salaire, mais par compatibilité sensorielle et cognitive.</p>
  <p class="meta">Collecte du {date.today().strftime('%d/%m/%Y')} · {len(OFFRES)} offres analysées ·
  855 offres supplémentaires dépouillées pour les signaux de marché · page privée, non indexée</p>
+ <div class="bandeau">
+  <a href="index.html" aria-current="page">Classement principal</a>
+  <a href="langues.html">Classement par langue exigée</a>
+ </div>
  <nav class="som">
   <a href="#levier">1. Le levier à activer</a>
   <a href="#plan">2. Plan 90 jours</a>
@@ -530,5 +552,159 @@ def main():
     print(f"{out} ({len(doc)//1024} Ko, {len(OFFRES)} offres)")
 
 
+def badges(o):
+    """Pastilles de langue pour une offre."""
+    if not o["langues"]:
+        return '<span class="lg vide">non précisé</span>'
+    rang = {"requis": 0, "choix": 1, "atout": 2}
+    items = sorted(o["langues"].items(), key=lambda kv: (rang[kv[1]], kv[0]))
+    return "".join(f'<span class="lg {n}" title="{n}">{c}</span>' for c, n in items)
+
+
+def page_langues():
+    """Seconde page : le meme classement, lu par l'exigence linguistique."""
+    L = D["langues"]
+    offres = OFFRES
+
+    lignes = "\n".join(
+        f'<tr data-s="{o["score"]}" data-ok="{1 if o["langues_ok"] else 0}"'
+        f' data-l="{E(",".join(sorted(o["langues"])))}"'
+        f' data-d="{E(",".join(sorted(c for c, n in o["langues"].items() if n == "requis")))}"'
+        f' data-t="{E((o["titre"] + " " + o["employeur"]).lower())}">'
+        f'<td class="num"><span class="score {"b" if o["score"]<70 else ""}'
+        f'{"c" if o["score"]<50 else ""}">{o["score"]}</span></td>'
+        f'<td><a href="{E(o["url"])}" target="_blank" rel="noopener">{E(o["titre"])}</a></td>'
+        f'<td>{E(o["employeur"])}</td>'
+        f'<td style="white-space:nowrap">{badges(o)}</td>'
+        f'<td class="small">{E(o["langues_resume"])}</td>'
+        f'<td>{E(o["contrat"])}</td>'
+        f'<td class="num">{o["salaire_min"]//1000}–{o["salaire_max"]//1000} k€</td>'
+        f'<td class="num">{o["km_sandweiler"]}</td></tr>'
+        for o in offres)
+
+    chiffres = "".join(
+        f'<div class="chiffre"><b>{E(c["n"])}</b><span>{E(c["l"])}</span><em>{E(c["d"])}</em></div>'
+        for c in L["chiffres"])
+
+    def gras(t):
+        out, morceaux = "", t.split("**")
+        for i, m in enumerate(morceaux):
+            out += f"<b>{E(m)}</b>" if i % 2 else E(m)
+        return out
+
+    lecture = "".join(f"<li>{gras(x)}</li>" for x in L["lecture"]["points"])
+
+    doc = f"""<title>Langues exigées — dossier emploi Luxembourg</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Classement des offres luxembourgeoises par langue exigée.">
+<style>{CSS}</style>
+
+<header class="top"><div class="wrap">
+ <h1>{E(L['titre'])}</h1>
+ <p class="sous">{E(L['sous'])}</p>
+ <p class="meta">Collecte du {date.today().strftime('%d/%m/%Y')} · {len(offres)} offres analysées ·
+ page privée, non indexée</p>
+ <div class="bandeau">
+  <a href="index.html">Classement principal</a>
+  <a href="langues.html" aria-current="page">Classement par langue exigée</a>
+ </div>
+</div></header>
+
+<main class="wrap">
+
+<section>
+ <h2><span class="num">1</span>Ce que les annonces demandent vraiment</h2>
+ <p class="chapo">{E(L['intro'])}</p>
+ <div class="chiffres">{chiffres}</div>
+ <h3>{E(L['lecture']['titre'])}</h3>
+ <ul>{lecture}</ul>
+ <p class="small">Dans le tableau, une pastille <span class="lg requis">DE</span> signale une langue
+ exigée, <span class="lg choix">DE</span> une langue faisant partie d'une liste au choix, et
+ <span class="lg atout">DE</span> une langue simplement présentée comme un atout.</p>
+</section>
+
+<section>
+ <h2><span class="num">2</span>{E(L['strategie']['titre'])}</h2>
+ <p>{E(L['strategie']['texte'])}</p>
+ <div class="encadre warm"><p>{E(L['strategie']['exception'])}</p></div>
+</section>
+
+<section>
+ <h2><span class="num">3</span>Le classement, filtré par langue</h2>
+ <p class="chapo">Le filtre « français + anglais suffisent » est actif par défaut : il laisse de côté
+ les offres qui exigent réellement l'allemand ou le luxembourgeois, mais conserve celles où ces
+ langues ne sont qu'un atout, et celles qui demandent deux langues au choix parmi une liste.</p>
+ <div class="filtres">
+  <input type="search" id="q" placeholder="Filtrer par intitulé ou employeur…" aria-label="Recherche">
+  <select id="l"><option value="">Toutes les exigences</option>
+   <option value="ok">FR + EN suffisent</option>
+   <option value="DE">Allemand exigé</option>
+   <option value="LU">Luxembourgeois exigé</option>
+   <option value="none">Aucune langue précisée</option>
+  </select>
+  <select id="s"><option value="0">Tous les scores</option><option value="70">70 et plus</option>
+   <option value="60">60 et plus</option><option value="50">50 et plus</option></select>
+  <label class="small"><input type="checkbox" id="ok" checked> français + anglais suffisent</label>
+  <span class="compte" id="compte"></span>
+ </div>
+ <div class="scroll"><table>
+  <thead><tr><th class="num">Score</th><th>Intitulé</th><th>Employeur</th><th>Langues</th>
+   <th>Détail</th><th>Contrat</th><th class="num">Salaire</th><th class="num">km</th></tr></thead>
+  <tbody id="corps">{lignes}</tbody>
+ </table></div>
+</section>
+
+<section>
+ <h2><span class="num">4</span>Comment la détection fonctionne</h2>
+ <p>{E(L['methode'])}</p>
+ <p class="small">Règles complètes dans <code>scripts/langues.py</code>. Le classement, la notation
+ et les salaires sont identiques à ceux de la page principale : seule la lecture change.</p>
+</section>
+
+</main>
+
+<footer class="wrap">
+ <p>Page privée, non référencée. Générée le {date.today().strftime('%d/%m/%Y')}.
+ <a href="index.html">Retour au classement principal</a>.</p>
+</footer>
+
+<button class="theme" id="bt">clair / sombre</button>
+<script>
+(function(){{
+ var q=document.getElementById('q'),l=document.getElementById('l'),s=document.getElementById('s'),
+     ok=document.getElementById('ok'),corps=document.getElementById('corps'),
+     cpt=document.getElementById('compte'),rows=[].slice.call(corps.rows);
+ function maj(){{
+  var t=q.value.toLowerCase().trim(),ll=l.value,ss=+s.value,oo=ok.checked,n=0;
+  rows.forEach(function(r){{
+   var d=r.dataset.d?r.dataset.d.split(','):[], any=r.dataset.l!=='';
+   var passeL = !ll || (ll==='ok'&&r.dataset.ok==='1')
+             || (ll==='none'&&!any) || (ll!=='ok'&&ll!=='none'&&d.indexOf(ll)>-1);
+   var v=(!t||r.dataset.t.indexOf(t)>-1)&&(+r.dataset.s>=ss)&&passeL
+       &&(!oo||r.dataset.ok==='1');
+   r.hidden=!v; if(v)n++;
+  }});
+  cpt.textContent=n+' offre'+(n>1?'s':'');
+ }}
+ [q,l,s,ok].forEach(function(e){{e.addEventListener('input',maj)}});
+ l.addEventListener('change',function(){{ if(l.value&&l.value!=='ok'){{ok.checked=false;}} maj(); }});
+ maj();
+ var bt=document.getElementById('bt');
+ try{{var v=localStorage.getItem('th'); if(v)document.documentElement.dataset.theme=v;}}catch(e){{}}
+ bt.addEventListener('click',function(){{
+  var dd=document.documentElement,
+      cur=dd.dataset.theme||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'),
+      nv=cur==='dark'?'light':'dark';
+  dd.dataset.theme=nv; try{{localStorage.setItem('th',nv)}}catch(e){{}}
+ }});
+}})();
+</script>
+"""
+    out = RACINE / "langues.html"
+    out.write_text(doc, encoding="utf-8")
+    print(f"{out} ({len(doc)//1024} Ko)")
+
+
 if __name__ == "__main__":
     main()
+    page_langues()

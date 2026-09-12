@@ -996,5 +996,48 @@
       ],
       "encadre": "Une conséquence stratégique, souvent manquée : puisque le marché n'est plus local, la rareté n'est plus locale non plus. Au Luxembourg, un parcours back-office chez un régulateur est une compétence recherchée parmi d'autres. Sur le marché mondial de l'entraînement des modèles, « francophone native ayant travaillé chez un régulateur financier » est une combinaison que très peu de gens peuvent offrir — et c'est exactement ce que les files expertes cherchent et paient trois fois le tarif généraliste. C'est le seul endroit de tout ce dossier où le profil est rare plutôt qu'atypique."
     }
+  },
+  "langues": {
+    "titre": "Le filtre des langues",
+    "sous": "Même classement, même notation — avec cette fois la langue exigée par chaque annonce. Au Luxembourg, c'est le critère qui élimine le plus de candidatures, et presque jamais celui qu'on regarde en premier.",
+    "intro": "Sur les 464 offres analysées, 359 sont atteignables avec le français et l'anglais seulement, soit 77 %. Les 105 autres se ferment sur une exigence d'allemand ou de luxembourgeois. Ce n'est pas une petite marge : c'est un poste sur quatre, et l'écart se concentre sur des segments précis du marché.",
+    "chiffres": [
+      {
+        "n": "359",
+        "l": "offres accessibles en français + anglais",
+        "d": "soit 77 % du classement"
+      },
+      {
+        "n": "73",
+        "l": "exigent l'allemand",
+        "d": "plus 121 où il est présenté comme un atout"
+      },
+      {
+        "n": "55",
+        "l": "exigent le luxembourgeois",
+        "d": "plus 76 où il est un atout"
+      },
+      {
+        "n": "163",
+        "l": "exigent l'anglais",
+        "d": "et 147 le français — les deux langues déjà acquises"
+      }
+    ],
+    "lecture": {
+      "titre": "Comment lire la colonne « Langues »",
+      "points": [
+        "**EN + FR** — les deux langues sont exigées. C'est la combinaison la plus fréquente dans les fonds et la conformité, et elle correspond exactement au profil.",
+        "**(DE + LU en atout)** — mentionnées comme un plus, jamais comme une condition. Ces offres restent entièrement ouvertes : ne pas s'autocensurer dessus, c'est la principale perte de candidatures.",
+        "**2 parmi DE / EN / FR / LU** — la formule luxembourgeoise classique « maîtrise de deux des langues suivantes ». Français + anglais suffisent à la remplir. Beaucoup de candidats la lisent comme une exigence des quatre langues et renoncent à tort.",
+        "**DE + FR** ou **DE + FR + LU** — là, c'est un vrai mur. Typiquement la banque de détail, l'artisanat, le secteur communal et les fiduciaires travaillant avec la clientèle allemande. À écarter sans regret : il y a assez d'offres ailleurs.",
+        "**non précisé** — l'annonce ne dit rien. C'est presque toujours un poste en anglais dans un environnement international, mais la question se pose au premier contact."
+      ]
+    },
+    "strategie": {
+      "titre": "Faut-il apprendre l'allemand ou le luxembourgeois ?",
+      "texte": "La réponse honnête est non, pas maintenant — et c'est un arbitrage d'énergie autant qu'un calcul de marché. Trois raisons. D'abord, trois quarts du marché pertinent sont déjà ouverts sans ces langues : l'effort marginal achète un quart de plus, au prix de six à douze mois d'apprentissage soutenu. Ensuite, les segments qui exigent l'allemand ou le luxembourgeois — banque de détail, communes, artisanat, accueil — sont précisément ceux qui exposent le plus au contact client et au bruit, donc les moins adaptés par ailleurs. Enfin, à effort égal, une certification ACAMS en conformité ouvre des postes mieux payés dans le quart du marché le plus calme, alors qu'un niveau A2 en luxembourgeois n'ouvre rien du tout — il faut un niveau conversationnel réel pour que ça compte.",
+      "exception": "Une seule exception mérite d'être posée : la piste communale. Sandweiler, Contern, Niederanven et Schuttrange sont à moins de dix minutes, les postes de secrétariat communal et d'archives y sont calmes et très procéduraux, et le quota de 5 % s'y applique. Si cette piste devient la priorité, alors le luxembourgeois cesse d'être un investissement diffus et devient une condition précise, avec un objectif clair. À décider en connaissance de cause, pas par défaut."
+    },
+    "methode": "La langue est déduite du texte intégral de chaque annonce. Chaque mention est classée en « exigée » ou « en atout » selon les formulations qui l'entourent (« courant », « maîtrise », « obligatoire » d'un côté ; « un plus », « souhaité », « serait un atout » de l'autre). Deux corrections ont été nécessaires et méritent d'être connues, parce qu'elles faussent toutes les recherches naïves : le formulaire de candidature de jobs.lu contient les mots « Insert English / French / German / Luxembourgish Cover note » au bas de chaque page, ce qui faisait apparaître quatre langues exigées partout ; et l'adjectif « luxembourgeois » désigne le plus souvent le pays ou le droit — « comptabilité luxembourgeoise », « droit luxembourgeois » — et non la langue. Malgré ces correctifs, une annonce peut rester ambiguë : la mention « non précisé » veut dire que rien n'a été trouvé, pas qu'aucune langue n'est attendue."
   }
 }
