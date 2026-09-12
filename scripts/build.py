@@ -125,6 +125,17 @@ ol.plan>li>b{display:block;font-size:13px;text-transform:uppercase;letter-spacin
 td .src{font-weight:600}
 td a.src{text-decoration:none}
 td a.src:hover{text-decoration:underline}
+.fit{display:inline-block;font-size:11.5px;padding:2px 8px;border-radius:99px;white-space:nowrap;border:1px solid var(--bord)}
+.fit.top{background:var(--accent);color:var(--carte);border-color:transparent;font-weight:600}
+.fit.ok{background:var(--accent-doux);color:var(--accent-texte)}
+.fit.non{background:var(--alerte-doux);color:var(--alerte)}
+ol.etapes{list-style:none;counter-reset:e;padding:0}
+ol.etapes>li{counter-increment:e;position:relative;padding:0 0 0 46px;margin:0 0 18px}
+ol.etapes>li::before{content:counter(e);position:absolute;left:0;top:0;width:30px;height:30px;
+ border-radius:50%;background:var(--accent-doux);color:var(--accent-texte);display:grid;
+ place-items:center;font-size:14px;font-weight:640;font-variant-numeric:tabular-nums}
+ol.etapes>li b{display:block;margin-bottom:2px}
+.reco{font-size:12px;color:var(--accent-texte);font-weight:600}
 """
 
 
@@ -166,7 +177,7 @@ def carte_offre(o):
 def main():
     p, m, pu, mi, co, pl = (D["profil"], D["marche"], D["publics"],
                             D["missions"], D["communication"], D["plan"])
-    lv, cs = D["levier"], D["consulter"]
+    lv, cs, dm = D["levier"], D["consulter"], D["domicile"]
     top = OFFRES[:12]
     familles = sorted({o["famille"] for o in OFFRES})
     contrats = sorted({o["contrat"] for o in OFFRES if o["contrat"]})
@@ -215,6 +226,35 @@ def main():
         f'<td>{E(c["duree"])}</td><td>{E(c["ou"])}</td></tr>'
         for c in mi["competences"]["liste"])
 
+    rg = dm["regimes"]
+    rg_lignes = "\n".join(
+        f'<tr><td><b>{E(r["nom"])}</b><br><span class="small">{E(r["detail"])}</span>'
+        f'<br><span class="reco">{E(r["reco"])}</span></td>'
+        f'<td>{E(r["admin"])}</td><td>{E(r["social"])}</td>'
+        f'<td>{E(r["delai"])}</td><td>{E(r["revenu"])}</td></tr>' for r in rg["lignes"])
+
+    ty = dm["types"]
+    ty_lignes = "\n".join(
+        f'<tr><td><b>{E(t["m"])}</b></td><td>{E(t["f"])}</td><td>{E(t["o"])}</td>'
+        f'<td class="num">{E(t["r"])}</td>'
+        f'<td><span class="fit {E(t["n"])}">{E(t["a"])}</span></td></tr>' for t in ty["lignes"])
+
+    et_lignes = "\n".join(
+        f'<li><b>{E(e["t"])}</b>{E(e["d"])}</li>' for e in dm["etapes"]["liste"])
+
+    mo_lignes = "\n".join(
+        f'<article class="carte"><h4 style="margin:0 0 6px;font-size:16px;font-weight:620">{E(x["t"])}</h4>'
+        f'<p style="margin:0">{E(x["d"])}</p></article>' for x in dm["monde"]["points"])
+
+    fi_lignes = "\n".join(
+        f'<tr><td class="num"><b>{E(x["s"])}</b></td><td><b>{E(x["n"])}</b><br>{E(x["t"])}</td></tr>'
+        for x in dm["fiscal"]["seuils"])
+
+    sc = dm["scenarios"]
+    sc_lignes = "\n".join(
+        f'<tr><td><b>{E(x["s"])}</b></td><td>{E(x["h"])}</td><td class="num">{E(x["b"])}</td>'
+        f'<td class="num">{E(x["n"])}</td><td class="small">{E(x["st"])}</td></tr>' for x in sc["lignes"])
+
     liens_eu = "".join(
         f'<li><a href="{E(l["u"])}" target="_blank" rel="noopener">{E(l["l"])}</a></li>'
         for l in cs["decouverte"]["liens"])
@@ -254,9 +294,10 @@ def main():
   <a href="#public">4. Piste publique et européenne</a>
   <a href="#salaires">5. Salaires du marché</a>
   <a href="#missions">6. Missions digitales</a>
-  <a href="#parler">7. Comment en parler</a>
-  <a href="#consulter">8. Où chercher soi-même</a>
-  <a href="#methode">9. Méthode et sources</a>
+  <a href="#domicile">7. Travailler de chez soi</a>
+  <a href="#parler">8. Comment en parler</a>
+  <a href="#consulter">9. Où chercher soi-même</a>
+  <a href="#methode">10. Méthode et sources</a>
  </nav>
 </div></header>
 
@@ -358,8 +399,52 @@ def main():
   <tbody>{comp}</tbody></table></div>
 </section>
 
+<section id="domicile">
+ <h2><span class="num">7</span>{E(dm['titre'])}</h2>
+ <p class="chapo">{E(dm['intro'])}</p>
+
+ <h3>{E(rg['titre'])}</h3>
+ <div class="scroll"><table>
+  <thead><tr>{''.join(f'<th>{E(c)}</th>' for c in rg['colonnes'])}</tr></thead>
+  <tbody>{rg_lignes}</tbody></table></div>
+ <div class="encadre"><p>{E(rg['conclusion'])}</p></div>
+
+ <h3>{E(ty['titre'])}</h3>
+ <div class="scroll"><table>
+  <thead><tr>{''.join(f'<th>{E(c)}</th>' for c in ty['colonnes'])}</tr></thead>
+  <tbody>{ty_lignes}</tbody></table></div>
+
+ <h3>{E(dm['etapes']['titre'])}</h3>
+ <p class="chapo">{E(dm['etapes']['intro'])}</p>
+ <ol class="etapes">{et_lignes}</ol>
+ <div class="encadre warn"><p>{E(dm['etapes']['reserve'])}</p></div>
+
+ <h3>{E(dm['monde']['titre'])}</h3>
+ <p class="chapo">{E(dm['monde']['intro'])}</p>
+ <div class="grille g2">{mo_lignes}</div>
+ <div class="encadre warm"><p>{E(dm['monde']['encadre'])}</p></div>
+
+ <h3>{E(dm['fiscal']['titre'])}</h3>
+ <p class="chapo">{E(dm['fiscal']['intro'])}</p>
+ <div class="scroll"><table>
+  <thead><tr><th class="num">Seuil</th><th>Ce qui se déclenche</th></tr></thead>
+  <tbody>{fi_lignes}</tbody></table></div>
+ <div class="encadre warn"><p>{E(dm['fiscal']['chomage'])}</p></div>
+ <div class="encadre"><p>{E(dm['fiscal']['compare'])}</p></div>
+
+ <h3>{E(dm['tenir']['titre'])}</h3>
+ <div class="carte"><ul style="margin:0">
+  {''.join(f'<li>{E(x)}</li>' for x in dm['tenir']['regles'])}</ul></div>
+
+ <h3>{E(sc['titre'])}</h3>
+ <div class="scroll"><table>
+  <thead><tr>{''.join(f'<th>{E(c)}</th>' for c in sc['colonnes'])}</tr></thead>
+  <tbody>{sc_lignes}</tbody></table></div>
+ <div class="encadre"><p>{E(sc['note'])}</p></div>
+</section>
+
 <section id="parler">
- <h2><span class="num">7</span>{E(co['titre'])}</h2>
+ <h2><span class="num">8</span>{E(co['titre'])}</h2>
  <ul>{''.join(f'<li>{E(x)}</li>' for x in co['principes'])}</ul>
  <h3>Les aménagements à demander, nommément</h3>
  <div class="carte"><ul style="margin:0">
@@ -367,7 +452,7 @@ def main():
 </section>
 
 <section id="consulter">
- <h2><span class="num">8</span>{E(cs['titre'])}</h2>
+ <h2><span class="num">9</span>{E(cs['titre'])}</h2>
  <p class="chapo">{E(cs['intro'])}</p>
 
  <div class="encadre">
@@ -385,7 +470,7 @@ def main():
 </section>
 
 <section id="methode">
- <h2><span class="num">9</span>Méthode et sources</h2>
+ <h2><span class="num">10</span>Méthode et sources</h2>
  <p>Les offres proviennent de jobs.lu, dépouillé le {date.today().strftime('%d/%m/%Y')} sur
  41 requêtes ciblées ; chaque annonce retenue a été téléchargée et lue en entier, puis notée par
  un script de scoring lexical dont les règles sont publiées avec ce dossier. Les signaux de marché

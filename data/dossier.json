@@ -721,5 +721,280 @@
       }
     ],
     "note": "Deux sites seulement résistent aux scripts, et ce sont les plus intéressants : l'ADEM JobBoard (compte requis) et GovJobs (captcha). Ce n'est pas une mauvaise nouvelle — cela signifie que la majorité des candidats ne les consultent pas non plus, et que les agrégateurs commerciaux n'y puisent pas. Dix minutes par semaine sur ces deux-là valent mieux qu'une heure sur les autres."
+  },
+  "domicile": {
+    "titre": "Travailler depuis chez soi : comment ça marche vraiment",
+    "intro": "« Mission digitale à domicile » recouvre trois choses très différentes, qui n'ont ni le même statut, ni la même protection sociale, ni le même délai de démarrage. Choisir le bon régime compte davantage que choisir la bonne plateforme — et le plus protecteur des trois est aussi le plus rapide à obtenir.",
+    "regimes": {
+      "titre": "Les trois régimes possibles, et lequel viser",
+      "colonnes": [
+        "Régime",
+        "Qui porte l'administratif",
+        "Protection sociale",
+        "Délai avant le 1er euro",
+        "Revenu réaliste"
+      ],
+      "lignes": [
+        {
+          "nom": "Salariée en télétravail",
+          "detail": "Un CDI ou CDD classique, exécuté tout ou partie depuis la maison. 15 % des offres luxembourgeoises le mentionnent, surtout en fund administration, reporting et KYC.",
+          "admin": "L'employeur, intégralement",
+          "social": "Complète : congés, maladie, pension, chômage",
+          "delai": "2 à 4 mois (recrutement)",
+          "revenu": "45 – 70 k€ brut / an",
+          "reco": "à viser en premier"
+        },
+        {
+          "nom": "Intérim ou CDD de mission",
+          "detail": "Missions de remédiation KYC, de contrôle, de reprise de dossiers. Juridiquement du salariat : c'est l'agence qui est l'employeur, la mission dure 3 à 12 mois, souvent en hybride.",
+          "admin": "L'agence d'intérim",
+          "social": "Complète, avec l'ancienneté qui court",
+          "delai": "2 à 6 semaines",
+          "revenu": "45 – 70 k€ brut / an",
+          "reco": "la porte d'entrée rapide"
+        },
+        {
+          "nom": "Indépendante",
+          "detail": "Plateformes d'IA, clients directs, vente d'art. C'est le seul régime où elle porte elle-même la facturation, les cotisations et la déclaration.",
+          "admin": "Elle-même",
+          "social": "À sa charge ; chômage quasi inaccessible",
+          "delai": "3 à 8 semaines (plateformes), 3 à 6 mois (clients directs)",
+          "revenu": "très variable : 150 € à 6 000 € / mois",
+          "reco": "en complément, ou après un premier succès"
+        }
+      ],
+      "conclusion": "La lecture la plus honnête : l'indépendance n'est pas un raccourci pour éviter le monde du travail. C'est le régime où l'on doit faire soi-même la prospection, la négociation et la relance — précisément les tâches les plus coûteuses en énergie ici. L'intérim de mission offre le même travail sur dossier, à domicile ou en hybride, sans rien de tout cela. C'est la voie à privilégier ; l'indépendance vient ensuite, une fois qu'un client sait déjà travailler avec elle."
+    },
+    "types": {
+      "titre": "Quelles missions exactement — et ce qu'on y fait réellement",
+      "colonnes": [
+        "Mission",
+        "Ce qu'on fait concrètement",
+        "Où",
+        "Rémunération",
+        "Adéquation"
+      ],
+      "lignes": [
+        {
+          "m": "Évaluation de réponses de modèles (RLHF)",
+          "f": "On lit deux réponses produites par une IA à une même question, on désigne la meilleure, et on justifie par écrit en appliquant une grille de critères de plusieurs dizaines de pages. Pas d'interaction humaine, tout est écrit et chronométré.",
+          "o": "Outlier (Scale AI), Alignerr, Mindrift",
+          "r": "18 – 28 $/h",
+          "a": "excellente",
+          "n": "top"
+        },
+        {
+          "m": "Tâches expertes finance et conformité",
+          "f": "Rédiger des cas réglementaires, vérifier des raisonnements de l'IA sur des sujets AML, KYC ou comptables, corriger ses erreurs de droit. La file la mieux payée, réservée aux profils diplômés ou expérimentés du domaine.",
+          "o": "Outlier (file expert), Mercor",
+          "r": "35 – 60 $/h",
+          "a": "excellente si acceptée",
+          "n": "top"
+        },
+        {
+          "m": "Remédiation KYC à distance",
+          "f": "Reprendre des dossiers clients incomplets : vérifier l'identité des bénéficiaires effectifs, contrôler les pièces, compléter les champs manquants, documenter. Objectif chiffré en dossiers par jour, contact limité à un chef d'équipe.",
+          "o": "Cabinets de la place, en intérim ou en freelance",
+          "r": "350 – 600 €/jour, ou 45 – 70 k€ en intérim",
+          "a": "excellente",
+          "n": "top"
+        },
+        {
+          "m": "Annotation et catégorisation de données",
+          "f": "Appliquer une taxonomie à des textes, des images ou des transcriptions : étiqueter, classer, signaler les cas limites. Très répétitif, très cadré.",
+          "o": "Toloka, Appen, TELUS Digital, Clickworker",
+          "r": "10 – 15 €/h en Europe",
+          "a": "bonne",
+          "n": "ok"
+        },
+        {
+          "m": "Contrôle qualité documentaire et relecture",
+          "f": "Vérifier la cohérence, la mise en forme et la conformité de rapports réglementaires ou de traductions avant publication. Travail asynchrone, livraison par courriel.",
+          "o": "Agences de traduction, études d'avocats, administrateurs de fonds luxembourgeois",
+          "r": "25 – 45 €/h",
+          "a": "bonne",
+          "n": "ok"
+        },
+        {
+          "m": "Saisie et tenue comptable",
+          "f": "Encoder les pièces, rapprocher les comptes, préparer les déclarations pour de petites structures. Échéances mensuelles fixes, contact réduit à quelques courriels.",
+          "o": "Fiduciaires (en sous-traitance), asbl luxembourgeoises",
+          "r": "35 – 60 €/h",
+          "a": "bonne",
+          "n": "ok"
+        },
+        {
+          "m": "Boutique d'art en ligne",
+          "f": "Préparer les fichiers d'impression, gérer un catalogue fixe, expédier ou laisser l'imprimeur expédier. Le travail créatif existe déjà ; ce qui s'ajoute, c'est la logistique du catalogue.",
+          "o": "Redbubble, Society6, INPRNT, Etsy, Letzshop",
+          "r": "150 – 800 €/mois après 12 à 18 mois",
+          "a": "bonne, en appoint",
+          "n": "ok"
+        },
+        {
+          "m": "Transcription audio",
+          "f": "Retranscrire des enregistrements. Écarté ici : la charge auditive soutenue est exactement ce que l'on cherche à éviter.",
+          "o": "—",
+          "r": "—",
+          "a": "à écarter",
+          "n": "non"
+        },
+        {
+          "m": "Modération de contenu",
+          "f": "Trier des signalements sur des plateformes sociales. Écarté : exposition non maîtrisée à des contenus violents, cadence imposée, et coût psychique documenté.",
+          "o": "—",
+          "r": "—",
+          "a": "à écarter",
+          "n": "non"
+        }
+      ]
+    },
+    "etapes": {
+      "titre": "Le mécanisme d'une mission de plateforme, étape par étape",
+      "intro": "C'est le circuit le plus simple à enclencher seule, et celui que personne n'explique correctement. Voici ce qui se passe réellement, dans l'ordre.",
+      "liste": [
+        {
+          "t": "Inscription — 30 à 90 minutes",
+          "d": "Compte créé avec une adresse e-mail, puis : nom, date de naissance, adresse, un numéro de téléphone luxembourgeois, une pièce d'identité officielle, un CV et un profil LinkedIn. La vérification d'identité est systématique."
+        },
+        {
+          "t": "Déclaration des compétences",
+          "d": "On coche ses domaines : langues (le français natif est un actif rare et mieux payé), niveau en code, et surtout les spécialités professionnelles. C'est ici que « finance », « conformité » et « réglementaire » doivent apparaître — ce sont ces mots qui ouvrent la file experte."
+        },
+        {
+          "t": "Mise en attente, puis appariement à un projet",
+          "d": "Rien ne se passe pendant deux à six semaines. C'est normal, ce n'est pas un refus. L'appariement arrive par courriel, sans prévenir."
+        },
+        {
+          "t": "Test d'entrée sur le projet",
+          "d": "On reçoit un guide de consignes de vingt à soixante pages, puis un test : QCM et questions ouvertes, corrigés sur l'application littérale du guide. C'est exactement le type d'épreuve où un raisonnement précis et non interprétatif est un avantage décisif."
+        },
+        {
+          "t": "Accès aux tâches",
+          "d": "Le travail arrive par lots, à prendre ou à laisser, à l'heure de son choix. Le temps est chronométré par la plateforme. On peut s'arrêter au milieu d'un lot."
+        },
+        {
+          "t": "Notation qualité continue",
+          "d": "Chaque tâche reçoit un score. Ce score conditionne l'accès aux projets mieux rémunérés — et sa chute entraîne un retrait silencieux du projet. C'est le vrai point de vigilance : travailler fatiguée fait baisser le score, et le score perdu est difficile à regagner."
+        },
+        {
+          "t": "Paiement — hebdomadaire",
+          "d": "Versement tous les mardis, par PayPal, Airtm ou virement bancaire. Aucune retenue à la source : le montant reçu est brut de tout, et c'est elle qui déclare au Luxembourg."
+        },
+        {
+          "t": "Fin de projet",
+          "d": "Les projets s'arrêtent sans préavis, parfois du jour au lendemain. D'où la règle : ne jamais compter dessus pour une charge fixe comme un loyer."
+        }
+      ],
+      "reserve": "À retenir : entre l'inscription et le premier virement, compter six à dix semaines. La disponibilité des tâches est irrégulière et les tarifs généralistes baissent depuis 2025, tandis que la file experte tient. C'est un revenu d'appoint pilotable, jamais un salaire."
+    },
+    "fiscal": {
+      "titre": "Ce que ça déclenche au Luxembourg — les quatre seuils à connaître",
+      "intro": "Travailler depuis chez soi pour une plateforme américaine reste une activité indépendante exercée au Luxembourg : c'est le lieu de résidence qui détermine les obligations, pas celui du donneur d'ordre. Quatre seuils, et un piège.",
+      "seuils": [
+        {
+          "s": "≈ 11 085 € / an",
+          "n": "Affiliation à la sécurité sociale",
+          "t": "En dessous d'un tiers du salaire social minimum (923,78 €/mois, soit ≈ 11 085 €/an), aucune affiliation au CCSS n'est requise et aucune cotisation n'est due. Il reste à déclarer le revenu à l'impôt. C'est le régime idéal pour démarrer — annotation et vente d'art y tiennent confortablement."
+        },
+        {
+          "s": "Au-delà",
+          "n": "Cotisations sociales — attention à l'effet de seuil",
+          "t": "Affiliation au CCSS dans les 8 jours suivant le début de l'activité. Les taux 2026 : pension 17 % (relevée de 16 % cette année), maladie soins de santé 5,60 %, prestations en espèces 0,50 %, accident 0,65 % — soit 23,75 % — plus la contribution dépendance de 1,4 % après un abattement de 692,83 €. Le piège : l'assiette minimum est le salaire social minimum entier, 2 771,33 €/mois, même si le revenu réel est inférieur. Franchir le seuil de peu coûte donc bien plus cher que ce que le revenu supplémentaire rapporte."
+        },
+        {
+          "s": "50 000 € / an",
+          "n": "TVA",
+          "t": "En dessous, franchise des petites entreprises : pas d'immatriculation, pas de TVA facturée. Au-dessus, immatriculation obligatoire. Pour des clients professionnels ailleurs dans l'UE, la TVA s'autoliquide chez eux (mention « Autoliquidation — article 196 de la directive 2006/112/CE »). Pour une plateforme américaine, la prestation est hors champ de la TVA luxembourgeoise."
+        },
+        {
+          "s": "Selon l'activité",
+          "n": "Autorisation d'établissement",
+          "t": "Les professions purement intellectuelles et artistiques sans caractère commercial en sont dispensées — un artiste plasticien qui vend ses œuvres, par exemple. Une prestation de services commerciale récurrente (tenue comptable, contrôle documentaire pour des entreprises) l'exige. L'annotation de données est une zone grise : la question se pose par écrit à la Direction générale des PME du Ministère de l'Économie, dont la réponse fait foi."
+        }
+      ],
+      "chomage": "Point à ne pas manquer : toute activité rémunérée, même occasionnelle, doit être déclarée à l'ADEM si elle perçoit une indemnité de chômage. Les revenus viennent en déduction de l'indemnité, mais un cumul partiel reste possible dans certains cas. Ne rien déclarer expose à une répétition de l'indu. Et dans l'autre sens : le chômage des indépendants est quasi inaccessible — il exige deux ans d'affiliation et au moins six mois d'activité indépendante avant la demande. Quitter le salariat pour l'indépendance, c'est renoncer à ce filet.",
+      "compare": "Comparaison qui change la décision : à 55 000 € brut salariés, l'employeur paie environ 13 % de charges patronales en plus, et elle a congés payés, 13e mois usuel, continuation de salaire en maladie et droit au chômage. À revenu indépendant équivalent, elle porte environ 25 % de cotisations, sans congés payés, sans 13e mois, et sans filet. Il faut donc facturer nettement plus pour vivre pareil — de l'ordre de 1,4 fois."
+    },
+    "tenir": {
+      "titre": "Tenir dans la durée — ce qui fait échouer la plupart des gens",
+      "regles": [
+        "Travailler par blocs de 90 minutes séparés par de vraies coupures, jamais en journée continue. Le paiement à la tâche pousse exactement à l'inverse, et c'est le piège principal : la fatigue fait chuter le score qualité, et le score perdu ferme l'accès aux projets bien payés.",
+        "Une seule plateforme au départ. Trois inscriptions simultanées produisent trois files d'attente, trois guides de consignes à mémoriser, et zéro revenu.",
+        "Tenir un tableur des heures et des montants dès la première tâche : c'est indispensable pour la déclaration fiscale, et c'est le seul moyen de connaître le taux horaire réel — celui qui inclut le temps de lecture des consignes, rarement payé.",
+        "Fixer une limite haute, pas seulement une limite basse. Une semaine à 45 heures sur une plateforme produit une chute de qualité la semaine suivante, et parfois un retrait de projet.",
+        "Séparer physiquement le poste de travail du lieu de dessin. La pratique artistique est un régulateur : elle cesse de l'être si elle occupe le même bureau que le travail rémunéré.",
+        "Un compte bancaire distinct pour les revenus d'activité. Cela évite d'avoir à reconstituer une année de relevés au moment de la déclaration."
+      ]
+    },
+    "scenarios": {
+      "titre": "Trois scénarios chiffrés",
+      "colonnes": [
+        "Scénario",
+        "Ce que ça suppose",
+        "Brut mensuel",
+        "Ce qu'il reste, en gros",
+        "Statut"
+      ],
+      "lignes": [
+        {
+          "s": "Appoint pur",
+          "h": "10 h/semaine d'évaluation IA, à 20 $/h moyens, sans autre activité.",
+          "b": "≈ 750 €",
+          "n": "≈ 750 € — sous le seuil, pas de cotisations ; imposable",
+          "st": "aucune affiliation requise"
+        },
+        {
+          "s": "Mi-temps salarié + plateforme",
+          "h": "Un 20 h/semaine en back-office à 50 k€ équivalent temps plein, plus 8 h/semaine d'évaluation IA.",
+          "b": "≈ 2 080 € salariés + ≈ 600 €",
+          "n": "≈ 2 100 € net au total",
+          "st": "salariée + activité accessoire déclarée"
+        },
+        {
+          "s": "Missions à temps plein",
+          "h": "Remédiation KYC, 15 jours facturés par mois à 450 €/jour, avec les creux entre missions.",
+          "b": "≈ 6 750 € les mois pleins, ≈ 4 500 € en moyenne annuelle",
+          "n": "≈ 2 800 – 3 200 € net après cotisations et impôt",
+          "st": "indépendante, affiliation et autorisation requises"
+        }
+      ],
+      "note": "Le scénario le plus sûr n'est aucun des trois pris isolément : c'est le deuxième, parce qu'il conserve la protection sociale du salariat tout en laissant l'activité indépendante grandir sans risque sous le seuil de cotisation. C'est aussi le seul qui laisse de la place au dessin."
+    },
+    "monde": {
+      "titre": "Les missions viennent du monde entier — ce que ça change",
+      "intro": "C'est le vrai intérêt de cette piste : depuis Sandweiler, le marché n'est plus le Luxembourg mais l'ensemble des donneurs d'ordre qui acceptent du travail à distance. Le donneur d'ordre peut être à San Francisco, à Londres ou à Singapour : c'est la résidence luxembourgeoise qui détermine les obligations, jamais le pays du client. Restent quatre choses concrètes à régler — le fuseau, la devise, le formulaire fiscal, et la TVA.",
+      "points": [
+        {
+          "t": "Le décalage horaire joue en sa faveur",
+          "d": "Ces plateformes fonctionnent en asynchrone : aucune réunion, aucun horaire imposé, les lots de tâches sont disponibles en continu. Un donneur d'ordre américain est en ligne l'après-midi et le soir heure luxembourgeoise — c'est-à-dire pendant les heures les plus calmes de la maison. Pour un client direct à l'étranger, poser d'emblée la règle de l'écrit asynchrone est non seulement accepté, c'est la norme du travail à distance international."
+        },
+        {
+          "t": "Toutes les plateformes n'acceptent pas tous les pays",
+          "d": "C'est le premier filtre à appliquer avant de perdre du temps. Ouvertes depuis le Luxembourg : Outlier (une soixantaine de pays), Alignerr, Mindrift, Appen (130 pays), TELUS Digital, Toloka (100 pays), Clickworker, Malt, Upwork. Fermées : DataAnnotation.tech (États-Unis, Royaume-Uni, Canada, Australie, Nouvelle-Zélande uniquement) et Mercor, largement centré sur les États-Unis. La plupart exigent une pièce d'identité officielle et un numéro de téléphone du pays de résidence — le numéro luxembourgeois est donc nécessaire."
+        },
+        {
+          "t": "Être en Europe fait baisser le tarif, être francophone le fait remonter",
+          "d": "Les tarifs sont régionalisés : une tâche généraliste payée 15 $/h aux États-Unis tombe souvent à 10–12 €/h en Europe continentale. Mais deux leviers annulent cet écart : le français natif, très demandé pour l'entraînement multilingue des modèles, et une spécialité professionnelle vérifiable. Un profil « français natif + finance réglementée » accède à des files à 35–60 $/h où la régionalisation ne s'applique plus. C'est là que se joue la différence entre un revenu d'appoint et un vrai revenu."
+        },
+        {
+          "t": "Le formulaire W-8BEN — à remplir avant le premier paiement",
+          "d": "Toute plateforme américaine demande ce formulaire à ses contributeurs non américains. Il atteste qu'elle n'est pas contribuable aux États-Unis et que le travail est effectué hors du territoire américain. Sans lui, la plateforme est tenue de retenir jusqu'à 30 % des gains et de les verser à l'IRS. Avec lui, aucune retenue : le travail réalisé entièrement depuis le Luxembourg n'est pas un revenu de source américaine. Le formulaire se remplit en cinq minutes dans les paramètres du compte, et il doit être fait avant le premier virement — récupérer une retenue déjà opérée est une procédure longue."
+        },
+        {
+          "t": "La devise coûte plus cher que la commission",
+          "d": "Les plateformes américaines paient en dollars. Une conversion faite par PayPal ou par une banque classique coûte couramment 3 à 4 % entre le taux appliqué et le taux réel — soit, sur 800 $ par mois, environ 300 € perdus par an, davantage que bien des commissions de plateforme. Un compte multidevises (Wise, Revolut, Payoneer) recevant les dollars puis convertissant au taux interbancaire ramène ce coût à quelques dixièmes de pour cent. À mettre en place avant le premier paiement, pas après."
+        },
+        {
+          "t": "La TVA dépend du pays du client, pas du sien",
+          "d": "Trois cas, et un seul compte tant que le chiffre d'affaires reste sous 50 000 € : sous ce seuil, la franchise des petites entreprises s'applique et aucune TVA n'est facturée à personne. Au-delà : client professionnel dans l'Union européenne, la TVA s'autoliquide chez lui (mention « Autoliquidation — article 196 de la directive 2006/112/CE ») ; client professionnel hors Union, la prestation est hors champ de la TVA luxembourgeoise ; client particulier hors Union pour un service électronique, la taxation suit le pays du client, mais dans le cas d'une boutique d'impression à la demande, c'est la plateforme qui s'en charge."
+        },
+        {
+          "t": "Ce qui ne change pas : la déclaration se fait au Luxembourg",
+          "d": "Quel que soit le pays du payeur, le revenu est imposable au Luxembourg, à ajouter à la déclaration annuelle, et il compte dans les seuils d'affiliation au CCSS décrits plus haut. Aucune plateforme ne prélève quoi que ce soit à la source : le montant reçu est brut de tout. La règle pratique est de mettre de côté un tiers de chaque virement dès sa réception — c'est l'ordre de grandeur des cotisations et de l'impôt réunis une fois le seuil franchi."
+        }
+      ],
+      "encadre": "Une conséquence stratégique, souvent manquée : puisque le marché n'est plus local, la rareté n'est plus locale non plus. Au Luxembourg, un parcours back-office chez un régulateur est une compétence recherchée parmi d'autres. Sur le marché mondial de l'entraînement des modèles, « francophone native ayant travaillé chez un régulateur financier » est une combinaison que très peu de gens peuvent offrir — et c'est exactement ce que les files expertes cherchent et paient trois fois le tarif généraliste. C'est le seul endroit de tout ce dossier où le profil est rare plutôt qu'atypique."
+    }
   }
 }
