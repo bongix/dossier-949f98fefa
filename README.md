@@ -44,11 +44,14 @@ puis `python3 scripts/build.py`.
 
 | Source | Accès | Usage |
 |---|---|---|
-| jobs.lu | libre | collecte automatisée, annonces lues intégralement |
+| jobs.lu | libre | collecte automatisée, annonces lues intégralement — base du classement |
+| EURES (portail européen) | libre, sans compte | **reprend les offres déclarées à l'ADEM** : ≈ 3 600 postes au Luxembourg, texte intégral. Navigable par URL, non scriptable (l'API interne refuse les requêtes reconstruites). Liens de recherche prêts à l'emploi dans la page. |
 | Moovijob | Cloudflare, navigateur uniquement | relevé ponctuel de 855 offres pour les signaux de marché |
-| ADEM JobBoard | authentification requise | **à consulter manuellement** — gisement principal de la piste publique |
-| GovJobs | captcha | **à consulter manuellement** — postes de l'État |
-| ADEM, Guichet.lu, fonction-publique.lu, EPSO | libre | cadre juridique du statut de salarié handicapé |
+| ADEM JobBoard | compte requis | **à consulter à la main** — c'est là que le statut de salarié handicapé rend le profil visible des employeurs sous quota |
+| GovJobs | captcha (un clic dans un navigateur ordinaire) | **à consulter à la main** — postes de l'État et inscription à l'EAG |
+| Indeed.lu, Monster.lu, Jooble | 403 pour un script | à couvrir par alerte e-mail |
+| ADEM, Guichet.lu, fonction-publique.lu, EPSO, CCSS | libre | cadre juridique du statut de salarié handicapé et de l'activité indépendante |
 
-Les deux gisements non automatisables sont aussi les moins concurrentiels : c'est une
-raison de plus d'y aller à la main.
+La section « Où chercher soi-même » de la page détaille, pour chacune, quoi y faire et à quel
+rythme. Les deux sources non automatisables sont aussi les moins fréquentées par les autres
+candidats et ignorées des agrégateurs commerciaux : c'est une raison d'y aller, pas de les éviter.

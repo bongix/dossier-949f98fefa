@@ -112,6 +112,19 @@ ol.plan>li{background:var(--carte);border:1px solid var(--bord);border-radius:va
 ol.plan>li>b{display:block;font-size:13px;text-transform:uppercase;letter-spacing:.05em;
  color:var(--accent-texte);margin-bottom:6px}
 .small{font-size:13.5px;color:var(--doux)}
+.acces{display:inline-block;font-size:11.5px;padding:2px 8px;border-radius:99px;white-space:nowrap;
+ border:1px solid var(--bord)}
+.acces.ok{background:var(--accent-doux);color:var(--accent-texte)}
+.acces.prioritaire{background:var(--accent);color:var(--carte);border-color:transparent;font-weight:600}
+.acces.compte,.acces.captcha{background:var(--alerte-doux);color:var(--alerte)}
+.acces.langue{background:var(--chaud-doux);color:var(--chaud)}
+.liens{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 6px;padding:0;list-style:none}
+.liens a{display:inline-block;font-size:13.5px;text-decoration:none;padding:6px 12px;border-radius:8px;
+ background:var(--carte);border:1px solid var(--bord-fort);color:var(--accent-texte)}
+.liens a:hover{border-color:var(--accent)}
+td .src{font-weight:600}
+td a.src{text-decoration:none}
+td a.src:hover{text-decoration:underline}
 """
 
 
@@ -153,7 +166,7 @@ def carte_offre(o):
 def main():
     p, m, pu, mi, co, pl = (D["profil"], D["marche"], D["publics"],
                             D["missions"], D["communication"], D["plan"])
-    lv = D["levier"]
+    lv, cs = D["levier"], D["consulter"]
     top = OFFRES[:12]
     familles = sorted({o["famille"] for o in OFFRES})
     contrats = sorted({o["contrat"] for o in OFFRES if o["contrat"]})
@@ -202,6 +215,17 @@ def main():
         f'<td>{E(c["duree"])}</td><td>{E(c["ou"])}</td></tr>'
         for c in mi["competences"]["liste"])
 
+    liens_eu = "".join(
+        f'<li><a href="{E(l["u"])}" target="_blank" rel="noopener">{E(l["l"])}</a></li>'
+        for l in cs["decouverte"]["liens"])
+
+    src_lignes = "\n".join(
+        f'<tr><td><a class="src" href="{E(r["url"])}" target="_blank" rel="noopener">{E(r["nom"])}</a></td>'
+        f'<td><span class="acces {E(r["niveau"])}">{E(r["acces"])}</span></td>'
+        f'<td>{E(r["contenu"])}</td><td>{E(r["faire"])}</td>'
+        f'<td class="small" style="white-space:nowrap">{E(r["rythme"])}</td></tr>'
+        for r in cs["lignes"])
+
     phases = "\n".join(
         f'<li><b>{E(f["periode"])}</b><ul>' +
         "".join(f"<li>{E(a)}</li>" for a in f["actions"]) + "</ul></li>"
@@ -231,7 +255,8 @@ def main():
   <a href="#salaires">5. Salaires du marché</a>
   <a href="#missions">6. Missions digitales</a>
   <a href="#parler">7. Comment en parler</a>
-  <a href="#methode">8. Méthode et sources</a>
+  <a href="#consulter">8. Où chercher soi-même</a>
+  <a href="#methode">9. Méthode et sources</a>
  </nav>
 </div></header>
 
@@ -341,15 +366,35 @@ def main():
   {''.join(f'<li>{E(x)}</li>' for x in co['amenagements'])}</ul></div>
 </section>
 
+<section id="consulter">
+ <h2><span class="num">8</span>{E(cs['titre'])}</h2>
+ <p class="chapo">{E(cs['intro'])}</p>
+
+ <div class="encadre">
+  <p><b>{E(cs['decouverte']['titre'])}</b></p>
+  <p style="margin-top:8px">{E(cs['decouverte']['texte'])}</p>
+  <ul class="liens">{liens_eu}</ul>
+  <p class="small" style="margin-top:6px">{E(cs['decouverte']['astuce'])}</p>
+ </div>
+
+ <div class="scroll"><table>
+  <thead><tr>{''.join(f'<th>{E(c)}</th>' for c in cs['colonnes'])}</tr></thead>
+  <tbody>{src_lignes}</tbody>
+ </table></div>
+ <div class="encadre warm"><p>{E(cs['note'])}</p></div>
+</section>
+
 <section id="methode">
- <h2><span class="num">8</span>Méthode et sources</h2>
+ <h2><span class="num">9</span>Méthode et sources</h2>
  <p>Les offres proviennent de jobs.lu, dépouillé le {date.today().strftime('%d/%m/%Y')} sur
  41 requêtes ciblées ; chaque annonce retenue a été téléchargée et lue en entier, puis notée par
  un script de scoring lexical dont les règles sont publiées avec ce dossier. Les signaux de marché
  (répartition CDI/CDD/intérim, part du télétravail) proviennent d'un relevé complémentaire de
  855 offres sur Moovijob. L'ADEM JobBoard exige une authentification et GovJobs est protégé par un
- captcha : ces deux gisements — les plus importants pour la piste publique — doivent être consultés
- directement, et c'est justement pourquoi on y trouve moins de concurrence.</p>
+ captcha, et ne sont donc pas dans le classement. Une vérification a toutefois montré qu'une large
+ part du vivier de l'ADEM est accessible anonymement via EURES, le portail européen de l'emploi —
+ environ 3 600 postes luxembourgeois, texte intégral, sans compte : les recherches prêtes à l'emploi
+ figurent à la section précédente.</p>
  <p class="small">Limites assumées : le score est calculé sur le texte des annonces, qui décrit ce
  que l'employeur veut montrer, pas la réalité sonore d'un plateau. Un score élevé signifie
  « à examiner », jamais « à accepter ». La question du nombre de personnes dans le bureau se pose

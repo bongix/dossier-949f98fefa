@@ -16,7 +16,6 @@
       "Âge : à 50 ans, le marché luxembourgeois valorise l'expérience sur les fonctions de contrôle, mais se ferme sur les postes dits « junior ». Viser les intitulés Officer / Senior Officer / Analyst, pas les programmes graduate."
     ]
   },
-
   "levier": {
     "titre": "Le statut de salarié handicapé : le levier à activer en premier",
     "pourquoi": "Au Luxembourg, ce statut n'est pas une étiquette sociale : c'est un mécanisme économique qui rend une candidature nettement moins chère pour l'employeur, et qui ouvre un marché caché — les postes réservés au secteur public et les obligations de quota du privé. Tant qu'il n'est pas demandé, aucun de ces leviers n'existe. La démarche prend plusieurs mois : c'est la première chose à lancer, en parallèle des candidatures.",
@@ -28,16 +27,33 @@
       "Une fois le statut obtenu, inscription au JobBoard ADEM avec le statut activé : les employeurs soumis à quota doivent déclarer leurs postes à l'ADEM au moins 3 jours avant toute autre publication."
     ],
     "avantages": [
-      { "titre": "Participation de l'État au salaire", "detail": "De 30 % à 100 % du salaire versé, charges patronales comprises, selon la perte de rendement constatée. C'est l'argument le plus fort à poser dans une candidature : le coût réel pour l'employeur peut être divisé par deux ou plus." },
-      { "titre": "Aménagement du poste pris en charge", "detail": "Frais d'aménagement du poste de travail, équipement professionnel adapté, frais de transport, financés par l'État. Concrètement : casque à réduction de bruit, cloisonnement acoustique, éclairage individuel réglable, second écran, bureau à l'écart des zones de passage." },
-      { "titre": "Assistance à l'inclusion dans l'emploi", "detail": "Un assistant à l'inclusion agréé accompagne la prise de poste, sur demande conjointe employeur + salarié auprès de l'ADEM : jusqu'à 300 heures pour un contrat d'au moins 24 mois (225 h entre 18 et 24 mois, 150 h entre 12 et 18 mois). Utile pour cadrer par écrit les attentes et désamorcer les malentendus de communication en amont." },
-      { "titre": "6 jours de congé supplémentaires", "detail": "Congé supplémentaire annuel, dont l'indemnité est remboursable à l'employeur. Sur une année, c'est une marge de récupération réelle." },
-      { "titre": "Quota public de 5 %", "detail": "L'État, les communes et les établissements publics doivent employer 5 % de salariés reconnus handicapés sur leur effectif total. L'État réserve chaque année un budget de 2 000 heures dédiées à l'embauche de personnes ayant ce statut, pourvues exclusivement via le service handicap de l'ADEM." },
-      { "titre": "Quota privé", "detail": "1 salarié handicapé pour les entreprises de 25 à 49 salariés ; 2 % de l'effectif de 50 à 299 ; 4 % à partir de 300. À défaut, taxe de compensation de 50 % du salaire social minimum par poste non pourvu. Les grandes banques et les grands administrateurs de fonds sont structurellement en dessous de leur quota." }
+      {
+        "titre": "Participation de l'État au salaire",
+        "detail": "De 30 % à 100 % du salaire versé, charges patronales comprises, selon la perte de rendement constatée. C'est l'argument le plus fort à poser dans une candidature : le coût réel pour l'employeur peut être divisé par deux ou plus."
+      },
+      {
+        "titre": "Aménagement du poste pris en charge",
+        "detail": "Frais d'aménagement du poste de travail, équipement professionnel adapté, frais de transport, financés par l'État. Concrètement : casque à réduction de bruit, cloisonnement acoustique, éclairage individuel réglable, second écran, bureau à l'écart des zones de passage."
+      },
+      {
+        "titre": "Assistance à l'inclusion dans l'emploi",
+        "detail": "Un assistant à l'inclusion agréé accompagne la prise de poste, sur demande conjointe employeur + salarié auprès de l'ADEM : jusqu'à 300 heures pour un contrat d'au moins 24 mois (225 h entre 18 et 24 mois, 150 h entre 12 et 18 mois). Utile pour cadrer par écrit les attentes et désamorcer les malentendus de communication en amont."
+      },
+      {
+        "titre": "6 jours de congé supplémentaires",
+        "detail": "Congé supplémentaire annuel, dont l'indemnité est remboursable à l'employeur. Sur une année, c'est une marge de récupération réelle."
+      },
+      {
+        "titre": "Quota public de 5 %",
+        "detail": "L'État, les communes et les établissements publics doivent employer 5 % de salariés reconnus handicapés sur leur effectif total. L'État réserve chaque année un budget de 2 000 heures dédiées à l'embauche de personnes ayant ce statut, pourvues exclusivement via le service handicap de l'ADEM."
+      },
+      {
+        "titre": "Quota privé",
+        "detail": "1 salarié handicapé pour les entreprises de 25 à 49 salariés ; 2 % de l'effectif de 50 à 299 ; 4 % à partir de 300. À défaut, taxe de compensation de 50 % du salaire social minimum par poste non pourvu. Les grandes banques et les grands administrateurs de fonds sont structurellement en dessous de leur quota."
+      }
     ],
     "avertissement": "Le statut est un levier, pas une obligation de divulgation générale. Il se présente à l'employeur comme un dispositif d'aide financière et d'aménagement, au moment du choix — pas nécessairement comme un diagnostic. La formulation recommandée figure plus bas, section « Comment en parler »."
   },
-
   "marche": {
     "titre": "Ce que dit le marché luxembourgeois, septembre 2026",
     "constats": [
@@ -49,40 +65,215 @@
       "Salaire brut annuel moyen au Luxembourg : environ 76 000 € (STATEC). Indexation automatique des salaires — une tranche indiciaire s'est appliquée en 2026."
     ],
     "grille": [
-      { "famille": "Transfer agency", "junior": "42 000 – 55 000", "confirme": "52 000 – 68 000", "senior": "62 000 – 78 000", "note": "Le cœur de cible. Traitement d'ordres de souscription/rachat, très procédural." },
-      { "famille": "Fund accounting", "junior": "45 000 – 55 000", "confirme": "55 000 – 70 000", "senior": "70 000 – 85 000", "note": "Calcul de VNI, rapprochements. Périodes de clôture intenses." },
-      { "famille": "KYC / AML", "junior": "45 000 – 58 000", "confirme": "55 000 – 70 000", "senior": "68 000 – 85 000", "note": "Marché en tension. Travail sur dossiers, règles écrites, peu de contact client." },
-      { "famille": "Conformité (compliance)", "junior": "50 000 – 65 000", "confirme": "60 000 – 80 000", "senior": "75 000 – 95 000", "note": "Le parcours AMF est un argument direct." },
-      { "famille": "Dépositaire / custody", "junior": "45 000 – 60 000", "confirme": "55 000 – 72 000", "senior": "65 000 – 82 000", "note": "Contrôle d'oversight, très cadré." },
-      { "famille": "Reporting réglementaire", "junior": "50 000 – 62 000", "confirme": "60 000 – 75 000", "senior": "72 000 – 90 000", "note": "Reporting CSSF/BCL, production périodique planifiée." },
-      { "famille": "Comptabilité", "junior": "45 000 – 55 000", "confirme": "55 000 – 68 000", "senior": "65 000 – 85 000", "note": "Beaucoup d'offres, y compris en fiduciaire (rythme plus dur)." },
-      { "famille": "Support administratif", "junior": "38 000 – 45 000", "confirme": "44 000 – 52 000", "senior": "50 000 – 58 000", "note": "Attention : souvent couplé à de l'accueil et du téléphone. À filtrer." },
-      { "famille": "Saisie / encodage de données", "junior": "34 000 – 40 000", "confirme": "40 000 – 45 000", "senior": "44 000 – 50 000", "note": "Bas de la fourchette, mais environnement souvent le plus calme. Porte d'entrée par l'intérim." },
-      { "famille": "Archives / documentation", "junior": "40 000 – 46 000", "confirme": "46 000 – 52 000", "senior": "50 000 – 58 000", "note": "Rare mais très adapté. Surveiller les institutions et les études d'avocats." },
-      { "famille": "Contrôle qualité", "junior": "40 000 – 48 000", "confirme": "48 000 – 55 000", "senior": "54 000 – 62 000", "note": "Beaucoup d'intérim industriel — vérifier le niveau sonore avant tout." },
-      { "famille": "Création graphique / PAO", "junior": "40 000 – 48 000", "confirme": "46 000 – 55 000", "senior": "55 000 – 65 000", "note": "Marché étroit au Luxembourg, mais existant en interne (banques, institutions)." },
-      { "famille": "Fonction publique — employé de l'État", "junior": "≈ 45 000 (groupe C1)", "confirme": "≈ 52 000 (groupe B1)", "senior": "≈ 62 000 – 75 000 (groupe A2/A1)", "note": "Ordres de grandeur indicatifs, hors primes. Progression automatique à l'ancienneté — un cadre très prévisible." }
+      {
+        "famille": "Transfer agency",
+        "junior": "42 000 – 55 000",
+        "confirme": "52 000 – 68 000",
+        "senior": "62 000 – 78 000",
+        "note": "Le cœur de cible. Traitement d'ordres de souscription/rachat, très procédural."
+      },
+      {
+        "famille": "Fund accounting",
+        "junior": "45 000 – 55 000",
+        "confirme": "55 000 – 70 000",
+        "senior": "70 000 – 85 000",
+        "note": "Calcul de VNI, rapprochements. Périodes de clôture intenses."
+      },
+      {
+        "famille": "KYC / AML",
+        "junior": "45 000 – 58 000",
+        "confirme": "55 000 – 70 000",
+        "senior": "68 000 – 85 000",
+        "note": "Marché en tension. Travail sur dossiers, règles écrites, peu de contact client."
+      },
+      {
+        "famille": "Conformité (compliance)",
+        "junior": "50 000 – 65 000",
+        "confirme": "60 000 – 80 000",
+        "senior": "75 000 – 95 000",
+        "note": "Le parcours AMF est un argument direct."
+      },
+      {
+        "famille": "Dépositaire / custody",
+        "junior": "45 000 – 60 000",
+        "confirme": "55 000 – 72 000",
+        "senior": "65 000 – 82 000",
+        "note": "Contrôle d'oversight, très cadré."
+      },
+      {
+        "famille": "Reporting réglementaire",
+        "junior": "50 000 – 62 000",
+        "confirme": "60 000 – 75 000",
+        "senior": "72 000 – 90 000",
+        "note": "Reporting CSSF/BCL, production périodique planifiée."
+      },
+      {
+        "famille": "Comptabilité",
+        "junior": "45 000 – 55 000",
+        "confirme": "55 000 – 68 000",
+        "senior": "65 000 – 85 000",
+        "note": "Beaucoup d'offres, y compris en fiduciaire (rythme plus dur)."
+      },
+      {
+        "famille": "Support administratif",
+        "junior": "38 000 – 45 000",
+        "confirme": "44 000 – 52 000",
+        "senior": "50 000 – 58 000",
+        "note": "Attention : souvent couplé à de l'accueil et du téléphone. À filtrer."
+      },
+      {
+        "famille": "Saisie / encodage de données",
+        "junior": "34 000 – 40 000",
+        "confirme": "40 000 – 45 000",
+        "senior": "44 000 – 50 000",
+        "note": "Bas de la fourchette, mais environnement souvent le plus calme. Porte d'entrée par l'intérim."
+      },
+      {
+        "famille": "Archives / documentation",
+        "junior": "40 000 – 46 000",
+        "confirme": "46 000 – 52 000",
+        "senior": "50 000 – 58 000",
+        "note": "Rare mais très adapté. Surveiller les institutions et les études d'avocats."
+      },
+      {
+        "famille": "Contrôle qualité",
+        "junior": "40 000 – 48 000",
+        "confirme": "48 000 – 55 000",
+        "senior": "54 000 – 62 000",
+        "note": "Beaucoup d'intérim industriel — vérifier le niveau sonore avant tout."
+      },
+      {
+        "famille": "Création graphique / PAO",
+        "junior": "40 000 – 48 000",
+        "confirme": "46 000 – 55 000",
+        "senior": "55 000 – 65 000",
+        "note": "Marché étroit au Luxembourg, mais existant en interne (banques, institutions)."
+      },
+      {
+        "famille": "Fonction publique — employé de l'État",
+        "junior": "≈ 45 000 (groupe C1)",
+        "confirme": "≈ 52 000 (groupe B1)",
+        "senior": "≈ 62 000 – 75 000 (groupe A2/A1)",
+        "note": "Ordres de grandeur indicatifs, hors primes. Progression automatique à l'ancienneté — un cadre très prévisible."
+      }
     ]
   },
-
   "publics": {
     "titre": "La piste publique et européenne — celle qu'aucun job board ne montre",
     "intro": "Les offres du secteur public et des institutions européennes ne passent pas par les plateformes commerciales : GovJobs est derrière un captcha, l'ADEM JobBoard derrière un login, et les institutions européennes recrutent sur leurs propres portails. C'est précisément pour cela que la concurrence y est plus faible — et c'est là que se trouve le quota de 5 %.",
     "employeurs": [
-      { "nom": "CSSF — Commission de Surveillance du Secteur Financier", "lieu": "Luxembourg-Ville", "km": 8, "pourquoi": "Le régulateur luxembourgeois. Un parcours AMF y est directement transposable : même métier, même culture de procédure écrite. Établissement public — donc soumis au quota de 5 %. Recrute en continu des analystes fonds, juristes et spécialistes reporting.", "canal": "cssf.lu — rubrique Carrières", "priorite": "très haute" },
-      { "nom": "BCL — Banque centrale du Luxembourg", "lieu": "Luxembourg-Ville", "km": 8, "pourquoi": "Statistiques, reporting, risque opérationnel. Environnement feutré, horaires stables, tâches à périodicité fixe.", "canal": "bcl.lu — Carrières", "priorite": "haute" },
-      { "nom": "Fonction publique luxembourgeoise (GovJobs)", "lieu": "Tout le pays", "km": 8, "pourquoi": "Quota de 5 % + budget annuel de 2 000 heures réservé aux personnes ayant le statut de salarié handicapé, pourvu exclusivement via le service handicap de l'ADEM. Depuis le 15 septembre 2026, le parcours est unifié : candidature sur une offre, puis Examen d'Aptitude Générale (EAG), désormais passable sur rendez-vous tout au long de l'année, avec aménagements possibles.", "canal": "govjobs.public.lu + demande d'aménagement d'épreuve auprès du CGPO", "priorite": "très haute" },
-      { "nom": "Cour de justice de l'Union européenne", "lieu": "Kirchberg", "km": 7, "pourquoi": "Gros besoins en gestion documentaire, relecture, vérification juridique et traitement de dossiers. Travail en bureau individuel, procédures écrites très strictes.", "canal": "curia.europa.eu — Emploi / agents contractuels", "priorite": "haute" },
-      { "nom": "Office des publications de l'Union européenne", "lieu": "Kirchberg / Gasperich", "km": 8, "pourquoi": "Édition, métadonnées, contrôle qualité documentaire, indexation. Le métier le plus proche d'un travail de précision silencieux dans toute la fonction publique européenne.", "canal": "op.europa.eu + EPSO CAST Permanent", "priorite": "haute" },
-      { "nom": "Eurostat", "lieu": "Kirchberg", "km": 7, "pourquoi": "Qualité des données, validation de séries statistiques, documentation méthodologique.", "canal": "EPSO CAST Permanent (profils Finance, Data, Administration)", "priorite": "moyenne" },
-      { "nom": "Cour des comptes européenne", "lieu": "Kirchberg", "km": 7, "pourquoi": "Audit et contrôle — même logique que la conformité, en plus lent et plus écrit.", "canal": "eca.europa.eu — Recrutement", "priorite": "moyenne" },
-      { "nom": "BEI / FEI — Banque européenne d'investissement", "lieu": "Kirchberg", "km": 7, "pourquoi": "Back-office, conformité, middle office. Rémunérations nettement supérieures au marché, politique de diversité formalisée, aménagements de poste standardisés.", "canal": "eib.org — Careers", "priorite": "haute" },
-      { "nom": "MES / ESM — Mécanisme européen de stabilité", "lieu": "Kirchberg", "km": 7, "pourquoi": "Opérations de marché, risque, conformité. Structure petite et très procédurale.", "canal": "esm.europa.eu — Careers", "priorite": "moyenne" },
-      { "nom": "Conseil de l'UE — dispositif pilote handicap", "lieu": "Bruxelles (télétravail partiel possible)", "km": 0, "pourquoi": "Base de données dédiée aux candidats ayant un handicap reconnu, pour recrutement direct comme agent contractuel (groupes de fonctions II, III et IV), sans concours EPSO. Candidature ouverte en continu.", "canal": "consilium.europa.eu — Job opportunities for persons with disabilities", "priorite": "haute" },
-      { "nom": "EPSO — CAST Permanent", "lieu": "Luxembourg et Bruxelles", "km": 7, "pourquoi": "Sélection permanente d'agents contractuels, ouverte toute l'année. Aménagements raisonnables prévus pour les épreuves (temps majoré, salle isolée, format adapté) : à demander dès le formulaire de candidature, justificatif à l'appui.", "canal": "eu-careers.europa.eu — CAST Permanent", "priorite": "haute" },
-      { "nom": "SNCI, Fonds du Logement, SNHBM, LIST, LIH, LISER, Uni.lu", "lieu": "Luxembourg / Belval / Esch", "km": 8, "pourquoi": "Établissements publics et instituts de recherche : soumis au quota, cadres de travail calmes, fonctions support en comptabilité, données et administration.", "canal": "Sites institutionnels respectifs", "priorite": "moyenne" },
-      { "nom": "Communes du canton de Luxembourg (Sandweiler, Contern, Niederanven, Schuttrange, Hesperange)", "lieu": "2 à 8 km", "km": 4, "pourquoi": "Quota de 5 % applicable. Postes de secrétariat communal, état civil, recette, archives. Trajets très courts. Réserve importante : le luxembourgeois est généralement exigé.", "canal": "Sites communaux + syvicol.lu", "priorite": "à vérifier (langue)" },
-      { "nom": "Fondation Autisme Luxembourg / Autisme Luxembourg asbl", "lieu": "Capellen, Munshausen, Rambrouch, Belvaux, Steinsel / Biekerech", "km": 20, "pourquoi": "Employeurs qui n'ont rien à apprendre sur l'autisme — l'aménagement n'a pas à être négocié. Ils recrutent aussi des fonctions support classiques : une offre de comptable était ouverte au moment de cette collecte. Distance et horaires à vérifier.", "canal": "fal.lu/vacancies + autisme.lu", "priorite": "haute (signal fort)" }
+      {
+        "nom": "CSSF — Commission de Surveillance du Secteur Financier",
+        "lieu": "Luxembourg-Ville",
+        "km": 8,
+        "pourquoi": "Le régulateur luxembourgeois. Un parcours AMF y est directement transposable : même métier, même culture de procédure écrite. Établissement public — donc soumis au quota de 5 %. Recrute en continu des analystes fonds, juristes et spécialistes reporting.",
+        "canal": "cssf.lu — rubrique Carrières",
+        "priorite": "très haute"
+      },
+      {
+        "nom": "BCL — Banque centrale du Luxembourg",
+        "lieu": "Luxembourg-Ville",
+        "km": 8,
+        "pourquoi": "Statistiques, reporting, risque opérationnel. Environnement feutré, horaires stables, tâches à périodicité fixe.",
+        "canal": "bcl.lu — Carrières",
+        "priorite": "haute"
+      },
+      {
+        "nom": "Fonction publique luxembourgeoise (GovJobs)",
+        "lieu": "Tout le pays",
+        "km": 8,
+        "pourquoi": "Quota de 5 % + budget annuel de 2 000 heures réservé aux personnes ayant le statut de salarié handicapé, pourvu exclusivement via le service handicap de l'ADEM. Depuis le 15 septembre 2026, le parcours est unifié : candidature sur une offre, puis Examen d'Aptitude Générale (EAG), désormais passable sur rendez-vous tout au long de l'année, avec aménagements possibles.",
+        "canal": "govjobs.public.lu + demande d'aménagement d'épreuve auprès du CGPO",
+        "priorite": "très haute"
+      },
+      {
+        "nom": "Cour de justice de l'Union européenne",
+        "lieu": "Kirchberg",
+        "km": 7,
+        "pourquoi": "Gros besoins en gestion documentaire, relecture, vérification juridique et traitement de dossiers. Travail en bureau individuel, procédures écrites très strictes.",
+        "canal": "curia.europa.eu — Emploi / agents contractuels",
+        "priorite": "haute"
+      },
+      {
+        "nom": "Office des publications de l'Union européenne",
+        "lieu": "Kirchberg / Gasperich",
+        "km": 8,
+        "pourquoi": "Édition, métadonnées, contrôle qualité documentaire, indexation. Le métier le plus proche d'un travail de précision silencieux dans toute la fonction publique européenne.",
+        "canal": "op.europa.eu + EPSO CAST Permanent",
+        "priorite": "haute"
+      },
+      {
+        "nom": "Eurostat",
+        "lieu": "Kirchberg",
+        "km": 7,
+        "pourquoi": "Qualité des données, validation de séries statistiques, documentation méthodologique.",
+        "canal": "EPSO CAST Permanent (profils Finance, Data, Administration)",
+        "priorite": "moyenne"
+      },
+      {
+        "nom": "Cour des comptes européenne",
+        "lieu": "Kirchberg",
+        "km": 7,
+        "pourquoi": "Audit et contrôle — même logique que la conformité, en plus lent et plus écrit.",
+        "canal": "eca.europa.eu — Recrutement",
+        "priorite": "moyenne"
+      },
+      {
+        "nom": "BEI / FEI — Banque européenne d'investissement",
+        "lieu": "Kirchberg",
+        "km": 7,
+        "pourquoi": "Back-office, conformité, middle office. Rémunérations nettement supérieures au marché, politique de diversité formalisée, aménagements de poste standardisés.",
+        "canal": "eib.org — Careers",
+        "priorite": "haute"
+      },
+      {
+        "nom": "MES / ESM — Mécanisme européen de stabilité",
+        "lieu": "Kirchberg",
+        "km": 7,
+        "pourquoi": "Opérations de marché, risque, conformité. Structure petite et très procédurale.",
+        "canal": "esm.europa.eu — Careers",
+        "priorite": "moyenne"
+      },
+      {
+        "nom": "Conseil de l'UE — dispositif pilote handicap",
+        "lieu": "Bruxelles (télétravail partiel possible)",
+        "km": 0,
+        "pourquoi": "Base de données dédiée aux candidats ayant un handicap reconnu, pour recrutement direct comme agent contractuel (groupes de fonctions II, III et IV), sans concours EPSO. Candidature ouverte en continu.",
+        "canal": "consilium.europa.eu — Job opportunities for persons with disabilities",
+        "priorite": "haute"
+      },
+      {
+        "nom": "EPSO — CAST Permanent",
+        "lieu": "Luxembourg et Bruxelles",
+        "km": 7,
+        "pourquoi": "Sélection permanente d'agents contractuels, ouverte toute l'année. Aménagements raisonnables prévus pour les épreuves (temps majoré, salle isolée, format adapté) : à demander dès le formulaire de candidature, justificatif à l'appui.",
+        "canal": "eu-careers.europa.eu — CAST Permanent",
+        "priorite": "haute"
+      },
+      {
+        "nom": "SNCI, Fonds du Logement, SNHBM, LIST, LIH, LISER, Uni.lu",
+        "lieu": "Luxembourg / Belval / Esch",
+        "km": 8,
+        "pourquoi": "Établissements publics et instituts de recherche : soumis au quota, cadres de travail calmes, fonctions support en comptabilité, données et administration.",
+        "canal": "Sites institutionnels respectifs",
+        "priorite": "moyenne"
+      },
+      {
+        "nom": "Communes du canton de Luxembourg (Sandweiler, Contern, Niederanven, Schuttrange, Hesperange)",
+        "lieu": "2 à 8 km",
+        "km": 4,
+        "pourquoi": "Quota de 5 % applicable. Postes de secrétariat communal, état civil, recette, archives. Trajets très courts. Réserve importante : le luxembourgeois est généralement exigé.",
+        "canal": "Sites communaux + syvicol.lu",
+        "priorite": "à vérifier (langue)"
+      },
+      {
+        "nom": "Fondation Autisme Luxembourg / Autisme Luxembourg asbl",
+        "lieu": "Capellen, Munshausen, Rambrouch, Belvaux, Steinsel / Biekerech",
+        "km": 20,
+        "pourquoi": "Employeurs qui n'ont rien à apprendre sur l'autisme — l'aménagement n'a pas à être négocié. Ils recrutent aussi des fonctions support classiques : une offre de comptable était ouverte au moment de cette collecte. Distance et horaires à vérifier.",
+        "canal": "fal.lu/vacancies + autisme.lu",
+        "priorite": "haute (signal fort)"
+      }
     ],
     "ateliers": {
       "titre": "Ateliers d'inclusion professionnelle — à connaître, mais en second rideau",
@@ -90,7 +281,6 @@
       "attention": "Lors de la commission d'orientation de l'ADEM, demander explicitement une orientation vers le marché ordinaire du travail. Une orientation vers l'atelier protégé est difficile à faire réviser ensuite."
     }
   },
-
   "missions": {
     "titre": "Piste 2 — sortir du contrat de travail : missions digitales et revenus propres",
     "cadre": {
@@ -155,17 +345,51 @@
     "competences": {
       "titre": "Les compétences à acquérir, par ordre de rentabilité",
       "liste": [
-        { "quoi": "Excel avancé — recherche, tableaux croisés, Power Query", "pourquoi": "Le socle absolu de tout poste de contrôle et de réconciliation au Luxembourg. Non négociable.", "duree": "4 à 6 semaines", "ou": "Formations ADEM (gratuites pour les demandeurs d'emploi inscrits), Chambre de Commerce (House of Training)" },
-        { "quoi": "Certification ACAMS ou équivalent AML/KYC", "pourquoi": "Transforme une expérience back-office en candidature crédible sur le segment le plus en tension de la place. Le meilleur rapport effort/salaire de toute la liste.", "duree": "3 à 6 mois", "ou": "House of Training, LHoFT, ACAMS en ligne" },
-        { "quoi": "Réglementation luxembourgeoise des fonds (UCITS, AIFM, circulaires CSSF)", "pourquoi": "Convertit l'expérience AMF en expérience transposable localement. Les employeurs ne font pas ce pont spontanément — il faut l'écrire dans le CV.", "duree": "2 à 3 mois", "ou": "ALFI, House of Training" },
-        { "quoi": "Power BI ou SQL de base", "pourquoi": "Ouvre les postes de qualité des données et de reporting, mieux payés et plus solitaires que la saisie.", "duree": "2 à 3 mois", "ou": "Formations en ligne, ADEM" },
-        { "quoi": "Anglais professionnel écrit (si à consolider)", "pourquoi": "Langue de travail dominante des fonds et des institutions européennes. L'écrit suffit largement — l'oral est peu sollicité en back-office.", "duree": "continu", "ou": "Institut National des Langues (INL), Luxembourg" },
-        { "quoi": "Luxembourgeois — niveau A2", "pourquoi": "N'est utile que pour la piste communale et certaines administrations. À ne suivre que si cette piste est retenue ; coût en énergie non négligeable.", "duree": "6 à 12 mois", "ou": "INL, cours communaux" },
-        { "quoi": "Outils de création — Affinity Designer ou Procreate, préparation fichiers d'impression", "pourquoi": "Passe la pratique artistique du loisir au produit vendable (fonds perdus, CMJN, résolution, gabarits d'impression à la demande).", "duree": "4 à 8 semaines", "ou": "Autoformation, tutoriels des imprimeurs" }
+        {
+          "quoi": "Excel avancé — recherche, tableaux croisés, Power Query",
+          "pourquoi": "Le socle absolu de tout poste de contrôle et de réconciliation au Luxembourg. Non négociable.",
+          "duree": "4 à 6 semaines",
+          "ou": "Formations ADEM (gratuites pour les demandeurs d'emploi inscrits), Chambre de Commerce (House of Training)"
+        },
+        {
+          "quoi": "Certification ACAMS ou équivalent AML/KYC",
+          "pourquoi": "Transforme une expérience back-office en candidature crédible sur le segment le plus en tension de la place. Le meilleur rapport effort/salaire de toute la liste.",
+          "duree": "3 à 6 mois",
+          "ou": "House of Training, LHoFT, ACAMS en ligne"
+        },
+        {
+          "quoi": "Réglementation luxembourgeoise des fonds (UCITS, AIFM, circulaires CSSF)",
+          "pourquoi": "Convertit l'expérience AMF en expérience transposable localement. Les employeurs ne font pas ce pont spontanément — il faut l'écrire dans le CV.",
+          "duree": "2 à 3 mois",
+          "ou": "ALFI, House of Training"
+        },
+        {
+          "quoi": "Power BI ou SQL de base",
+          "pourquoi": "Ouvre les postes de qualité des données et de reporting, mieux payés et plus solitaires que la saisie.",
+          "duree": "2 à 3 mois",
+          "ou": "Formations en ligne, ADEM"
+        },
+        {
+          "quoi": "Anglais professionnel écrit (si à consolider)",
+          "pourquoi": "Langue de travail dominante des fonds et des institutions européennes. L'écrit suffit largement — l'oral est peu sollicité en back-office.",
+          "duree": "continu",
+          "ou": "Institut National des Langues (INL), Luxembourg"
+        },
+        {
+          "quoi": "Luxembourgeois — niveau A2",
+          "pourquoi": "N'est utile que pour la piste communale et certaines administrations. À ne suivre que si cette piste est retenue ; coût en énergie non négligeable.",
+          "duree": "6 à 12 mois",
+          "ou": "INL, cours communaux"
+        },
+        {
+          "quoi": "Outils de création — Affinity Designer ou Procreate, préparation fichiers d'impression",
+          "pourquoi": "Passe la pratique artistique du loisir au produit vendable (fonds perdus, CMJN, résolution, gabarits d'impression à la demande).",
+          "duree": "4 à 8 semaines",
+          "ou": "Autoformation, tutoriels des imprimeurs"
+        }
       ]
     }
   },
-
   "communication": {
     "titre": "Comment en parler — et quand",
     "principes": [
@@ -186,47 +410,316 @@
       "Un référent unique identifié pour les questions, plutôt qu'une équipe indifférenciée"
     ]
   },
-
   "plan": {
     "titre": "Plan d'action sur 90 jours",
     "phases": [
-      { "periode": "Semaines 1 – 2", "actions": [
-        "Prendre rendez-vous avec l'ADEM — Service Handicap et Reclassement professionnel (247-88888) et lancer la demande de reconnaissance du statut de salarié handicapé.",
-        "Réunir le dossier médical : diagnostic TSA, retentissement fonctionnel, besoins d'aménagement formulés explicitement.",
-        "S'inscrire comme demandeuse d'emploi à l'ADEM si ce n'est pas déjà fait — c'est la condition d'accès aux formations gratuites.",
-        "Créer un profil sur le JobBoard ADEM, Moovijob et jobs.lu."
-      ]},
-      { "periode": "Semaines 3 – 6", "actions": [
-        "Réécrire le CV en deux versions : « contrôle et conformité » (axe AMF + back-office) et « traitement de données et documentation » (axe précision).",
-        "Candidater aux 10 premières offres du classement ci-dessous, et déposer une candidature spontanée à la CSSF, la BCL, la BEI et la Cour de justice.",
-        "S'inscrire à EPSO CAST Permanent et à la base de données handicap du Conseil de l'UE — ces deux inscriptions n'expirent pas et travaillent en arrière-plan.",
-        "Ouvrir un compte Outlier / Alignerr et passer les tests d'entrée : plusieurs semaines de délai, donc à lancer tôt."
-      ]},
-      { "periode": "Semaines 7 – 12", "actions": [
-        "Contacter les cabinets spécialisés de la place en se positionnant sur des missions de remédiation KYC (intérim longue durée).",
-        "Démarrer la formation Excel avancé et s'inscrire à une préparation ACAMS.",
-        "Ouvrir la boutique d'impression à la demande — commencer par 10 visuels et un seul canal, pas trois.",
-        "S'inscrire au prochain Marché des créateurs ou Konschtmaart pour tester la vente physique sans engagement."
-      ]}
+      {
+        "periode": "Semaines 1 – 2",
+        "actions": [
+          "Prendre rendez-vous avec l'ADEM — Service Handicap et Reclassement professionnel (247-88888) et lancer la demande de reconnaissance du statut de salarié handicapé.",
+          "Réunir le dossier médical : diagnostic TSA, retentissement fonctionnel, besoins d'aménagement formulés explicitement.",
+          "S'inscrire comme demandeuse d'emploi à l'ADEM si ce n'est pas déjà fait — c'est la condition d'accès aux formations gratuites.",
+          "Créer un profil sur le JobBoard ADEM, Moovijob et jobs.lu."
+        ]
+      },
+      {
+        "periode": "Semaines 3 – 6",
+        "actions": [
+          "Réécrire le CV en deux versions : « contrôle et conformité » (axe AMF + back-office) et « traitement de données et documentation » (axe précision).",
+          "Candidater aux 10 premières offres du classement ci-dessous, et déposer une candidature spontanée à la CSSF, la BCL, la BEI et la Cour de justice.",
+          "S'inscrire à EPSO CAST Permanent et à la base de données handicap du Conseil de l'UE — ces deux inscriptions n'expirent pas et travaillent en arrière-plan.",
+          "Ouvrir un compte Outlier / Alignerr et passer les tests d'entrée : plusieurs semaines de délai, donc à lancer tôt."
+        ]
+      },
+      {
+        "periode": "Semaines 7 – 12",
+        "actions": [
+          "Contacter les cabinets spécialisés de la place en se positionnant sur des missions de remédiation KYC (intérim longue durée).",
+          "Démarrer la formation Excel avancé et s'inscrire à une préparation ACAMS.",
+          "Ouvrir la boutique d'impression à la demande — commencer par 10 visuels et un seul canal, pas trois.",
+          "S'inscrire au prochain Marché des créateurs ou Konschtmaart pour tester la vente physique sans engagement."
+        ]
+      }
     ]
   },
-
   "sources": [
-    { "titre": "ADEM — Mesures et aides pour demandeurs d'emploi handicapés", "url": "https://adem.public.lu/fr/demandeurs-demploi/handicap/mesures-aides.html" },
-    { "titre": "ADEM — Acquérir le statut de salarié handicapé", "url": "https://adem.public.lu/fr/demandeurs-demploi/handicap/acquerir-statut.html" },
-    { "titre": "ADEM — Recruter un salarié handicapé (côté employeur)", "url": "https://adem.public.lu/fr/employeurs/recruter/Employer-un-salarie-handicape.html" },
-    { "titre": "Guichet.lu — Participation de l'État en faveur des salariés handicapés", "url": "https://guichet.public.lu/fr/entreprises/financement-aides/aides-emploi-recrutement-formation/aides-emploi/aide-embauche-travailleurs-handicapes.html" },
-    { "titre": "Guichet.lu — Assistance à l'inclusion dans l'emploi", "url": "https://guichet.public.lu/fr/citoyens/travail/conditions-travail/statut-salarie-handicape/assistance-inclusion.html" },
-    { "titre": "Portail de la fonction publique — Salariés handicapés", "url": "https://fonction-publique.public.lu/fr/carriere/parcours-remuneration/salarieshandicapes.html" },
-    { "titre": "GovJobs — Réforme du recrutement au 15 septembre 2026", "url": "https://govjobs.public.lu/fr/actualites/2026/reforme-recrutement-dans-la-fonction-publique.html" },
-    { "titre": "EU Careers — CAST Permanent", "url": "https://eu-careers.europa.eu/en/Cast-Permanent" },
-    { "titre": "EU Careers — Aménagements raisonnables dans les procédures EPSO", "url": "https://eu-careers.europa.eu/en/overview-possible-reasonable-accommodations-epso-selection-tests" },
-    { "titre": "Conseil de l'UE — Opportunités pour les personnes handicapées", "url": "https://www.consilium.europa.eu/en/general-secretariat/careers/job-opportunities-at-the-gsc/job-opportunities-for-persons-with-disabilities/" },
-    { "titre": "Guide des rémunérations fonds d'investissement Luxembourg 2026", "url": "https://imlux.lu/luxembourg-salary-guide-investment-funds/" },
-    { "titre": "Salaire social minimum au Luxembourg 2026", "url": "https://frontaliers-grandest.eu/accueil/salaries/france-luxembourg/droit-travail/contrat-de-travail/salaire-min/" },
-    { "titre": "Guichet.lu — Artiste professionnel indépendant", "url": "https://guichet.public.lu/fr/citoyens/aides/travail/artistes-independants-intermittents-spectacle/artiste-professionnel-independant.html" },
-    { "titre": "CCSS — Affiliation des indépendants", "url": "https://ccss.public.lu/fr/independants/commencer-arreter-activite/affilier.html" },
-    { "titre": "Ministère de la Famille — Services agréés pour personnes handicapées", "url": "https://mfsva.gouvernement.lu/fr/le-ministere/attributions/personnes-handicapees/services-agrees.html" },
-    { "titre": "Fondation Autisme Luxembourg — Offres d'emploi", "url": "https://www.fal.lu/vacancies/" }
-  ]
+    {
+      "titre": "ADEM — Mesures et aides pour demandeurs d'emploi handicapés",
+      "url": "https://adem.public.lu/fr/demandeurs-demploi/handicap/mesures-aides.html"
+    },
+    {
+      "titre": "ADEM — Acquérir le statut de salarié handicapé",
+      "url": "https://adem.public.lu/fr/demandeurs-demploi/handicap/acquerir-statut.html"
+    },
+    {
+      "titre": "ADEM — Recruter un salarié handicapé (côté employeur)",
+      "url": "https://adem.public.lu/fr/employeurs/recruter/Employer-un-salarie-handicape.html"
+    },
+    {
+      "titre": "Guichet.lu — Participation de l'État en faveur des salariés handicapés",
+      "url": "https://guichet.public.lu/fr/entreprises/financement-aides/aides-emploi-recrutement-formation/aides-emploi/aide-embauche-travailleurs-handicapes.html"
+    },
+    {
+      "titre": "Guichet.lu — Assistance à l'inclusion dans l'emploi",
+      "url": "https://guichet.public.lu/fr/citoyens/travail/conditions-travail/statut-salarie-handicape/assistance-inclusion.html"
+    },
+    {
+      "titre": "Portail de la fonction publique — Salariés handicapés",
+      "url": "https://fonction-publique.public.lu/fr/carriere/parcours-remuneration/salarieshandicapes.html"
+    },
+    {
+      "titre": "GovJobs — Réforme du recrutement au 15 septembre 2026",
+      "url": "https://govjobs.public.lu/fr/actualites/2026/reforme-recrutement-dans-la-fonction-publique.html"
+    },
+    {
+      "titre": "EU Careers — CAST Permanent",
+      "url": "https://eu-careers.europa.eu/en/Cast-Permanent"
+    },
+    {
+      "titre": "EU Careers — Aménagements raisonnables dans les procédures EPSO",
+      "url": "https://eu-careers.europa.eu/en/overview-possible-reasonable-accommodations-epso-selection-tests"
+    },
+    {
+      "titre": "Conseil de l'UE — Opportunités pour les personnes handicapées",
+      "url": "https://www.consilium.europa.eu/en/general-secretariat/careers/job-opportunities-at-the-gsc/job-opportunities-for-persons-with-disabilities/"
+    },
+    {
+      "titre": "Guide des rémunérations fonds d'investissement Luxembourg 2026",
+      "url": "https://imlux.lu/luxembourg-salary-guide-investment-funds/"
+    },
+    {
+      "titre": "Salaire social minimum au Luxembourg 2026",
+      "url": "https://frontaliers-grandest.eu/accueil/salaries/france-luxembourg/droit-travail/contrat-de-travail/salaire-min/"
+    },
+    {
+      "titre": "Guichet.lu — Artiste professionnel indépendant",
+      "url": "https://guichet.public.lu/fr/citoyens/aides/travail/artistes-independants-intermittents-spectacle/artiste-professionnel-independant.html"
+    },
+    {
+      "titre": "CCSS — Affiliation des indépendants",
+      "url": "https://ccss.public.lu/fr/independants/commencer-arreter-activite/affilier.html"
+    },
+    {
+      "titre": "Ministère de la Famille — Services agréés pour personnes handicapées",
+      "url": "https://mfsva.gouvernement.lu/fr/le-ministere/attributions/personnes-handicapees/services-agrees.html"
+    },
+    {
+      "titre": "Fondation Autisme Luxembourg — Offres d'emploi",
+      "url": "https://www.fal.lu/vacancies/"
+    }
+  ],
+  "consulter": {
+    "titre": "Où chercher soi-même — les sites, leur accès, et quoi y faire",
+    "intro": "Aucun outil ne couvre le marché luxembourgeois à lui seul, et les gisements les plus intéressants sont justement ceux qu'aucun robot ne peut lire. Voici chaque source, ce qu'elle contient réellement, comment y entrer, et à quel rythme la regarder. Les trois premières lignes suffisent à couvrir l'essentiel du marché.",
+    "decouverte": {
+      "titre": "Le contournement qui change la donne : EURES",
+      "texte": "L'ADEM JobBoard exige un compte, ce qui le rend invisible de l'extérieur. Mais l'ADEM est le service public de l'emploi luxembourgeois, et à ce titre ses offres remontent automatiquement sur EURES, le portail européen de l'emploi — en accès totalement anonyme, sans compte, avec le texte intégral des annonces. Au moment de cette vérification, EURES affichait 3 643 postes au Luxembourg, dont 1 857 correspondant à une recherche « back office » — soit davantage que jobs.lu et Moovijob réunis sur ce créneau. Les liens ci-dessous sont directement cliquables et rechargent des résultats à jour à chaque ouverture.",
+      "liens": [
+        {
+          "l": "Back office et middle office",
+          "u": "https://europa.eu/eures/portal/jv-se/search?page=1&resultsPerPage=25&orderBy=MOST_RECENT&locationCodes=lu&lang=fr&keywordsEverywhere=back%20office"
+        },
+        {
+          "l": "Transfer agency",
+          "u": "https://europa.eu/eures/portal/jv-se/search?page=1&resultsPerPage=25&orderBy=MOST_RECENT&locationCodes=lu&lang=fr&keywordsEverywhere=transfer%20agency"
+        },
+        {
+          "l": "KYC et AML",
+          "u": "https://europa.eu/eures/portal/jv-se/search?page=1&resultsPerPage=25&orderBy=MOST_RECENT&locationCodes=lu&lang=fr&keywordsEverywhere=KYC"
+        },
+        {
+          "l": "Conformité (compliance)",
+          "u": "https://europa.eu/eures/portal/jv-se/search?page=1&resultsPerPage=25&orderBy=MOST_RECENT&locationCodes=lu&lang=fr&keywordsEverywhere=compliance"
+        },
+        {
+          "l": "Reporting réglementaire",
+          "u": "https://europa.eu/eures/portal/jv-se/search?page=1&resultsPerPage=25&orderBy=MOST_RECENT&locationCodes=lu&lang=fr&keywordsEverywhere=reporting%20r%C3%A9glementaire"
+        },
+        {
+          "l": "Saisie et encodage de données",
+          "u": "https://europa.eu/eures/portal/jv-se/search?page=1&resultsPerPage=25&orderBy=MOST_RECENT&locationCodes=lu&lang=fr&keywordsEverywhere=encodage"
+        },
+        {
+          "l": "Archives et documentation",
+          "u": "https://europa.eu/eures/portal/jv-se/search?page=1&resultsPerPage=25&orderBy=MOST_RECENT&locationCodes=lu&lang=fr&keywordsEverywhere=archiviste"
+        },
+        {
+          "l": "Comptabilité",
+          "u": "https://europa.eu/eures/portal/jv-se/search?page=1&resultsPerPage=25&orderBy=MOST_RECENT&locationCodes=lu&lang=fr&keywordsEverywhere=comptable"
+        },
+        {
+          "l": "Temps partiel",
+          "u": "https://europa.eu/eures/portal/jv-se/search?page=1&resultsPerPage=25&orderBy=MOST_RECENT&locationCodes=lu&lang=fr&keywordsEverywhere=temps%20partiel"
+        },
+        {
+          "l": "Tous les postes au Luxembourg",
+          "u": "https://europa.eu/eures/portal/jv-se/search?page=1&resultsPerPage=25&orderBy=MOST_RECENT&locationCodes=lu&lang=f"
+        }
+      ],
+      "astuce": "Sur EURES, les filtres de gauche permettent de restreindre au temps partiel, au type de contrat et à la date de publication. Mettre « Dernière semaine » et garder l'onglet en favori : une visite de dix minutes le lundi et le jeudi suffit à ne rien manquer."
+    },
+    "colonnes": [
+      "Source",
+      "Accès",
+      "Ce qu'on y trouve",
+      "Quoi y faire",
+      "Rythme"
+    ],
+    "lignes": [
+      {
+        "nom": "EURES — Luxembourg",
+        "url": "https://europa.eu/eures/portal/jv-se/search?locationCodes=lu&lang=fr",
+        "acces": "libre",
+        "niveau": "ok",
+        "contenu": "≈ 3 600 postes au Luxembourg, texte intégral, reprend les offres déclarées à l'ADEM.",
+        "faire": "Les dix recherches enregistrées ci-dessus, filtre « dernière semaine ».",
+        "rythme": "2× / semaine"
+      },
+      {
+        "nom": "ADEM JobBoard",
+        "url": "https://jobboard.adem.lu/",
+        "acces": "compte requis",
+        "niveau": "compte",
+        "contenu": "Le vivier officiel. Les employeurs soumis au quota doivent y déclarer leurs postes 3 jours avant toute autre publication — ces 3 jours sont une avance réelle.",
+        "faire": "Créer le compte, y activer le statut de salarié handicapé une fois obtenu : c'est ce qui rend le profil visible des employeurs cherchant à remplir leur quota. Irremplaçable, même si EURES en reprend une partie.",
+        "rythme": "2× / semaine"
+      },
+      {
+        "nom": "GovJobs — fonction publique",
+        "url": "https://govjobs.public.lu/fr/postuler/postes-ouverts/postes-vacants.html",
+        "acces": "captcha",
+        "niveau": "captcha",
+        "contenu": "Tous les postes de l'État : fonctionnaires, employés de l'État, salariés. Plus l'inscription à l'Examen d'Aptitude Générale.",
+        "faire": "Le captcha se passe en un clic dans un navigateur ordinaire — il ne bloque que les scripts. S'inscrire à l'EAG (sur rendez-vous toute l'année depuis le 15/09/2026) et demander l'aménagement d'épreuve au CGPO.",
+        "rythme": "1× / semaine"
+      },
+      {
+        "nom": "Moovijob",
+        "url": "https://www.moovijob.com/offres-emploi/jobs-luxembourg",
+        "acces": "libre (navigateur)",
+        "niveau": "ok",
+        "contenu": "≈ 4 500 offres, la meilleure indication du type de contrat et du salaire affiché.",
+        "faire": "Créer une alerte e-mail par mot-clé plutôt que consulter. Les salons Moovijob Week (Banque/Assurance le 19/11/2026, Informatique le 18/11) permettent de rencontrer les recruteurs sans passer par un entretien formel.",
+        "rythme": "alerte e-mail"
+      },
+      {
+        "nom": "jobs.lu",
+        "url": "https://fr.jobs.lu/Jobs.aspx",
+        "acces": "libre",
+        "niveau": "ok",
+        "contenu": "≈ 1 150 offres. C'est la source du classement de cette page.",
+        "faire": "Déjà dépouillé ici — n'y retourner que pour postuler.",
+        "rythme": "via cette page"
+      },
+      {
+        "nom": "Indeed.lu, Monster.lu, LinkedIn",
+        "url": "https://lu.indeed.com/",
+        "acces": "libre (navigateur)",
+        "niveau": "ok",
+        "contenu": "Reprennent largement les mêmes offres, avec du doublon. LinkedIn est utile surtout pour les cabinets de recrutement.",
+        "faire": "Une alerte par site, pas de consultation manuelle. Doublons fréquents avec EURES.",
+        "rythme": "alerte e-mail"
+      },
+      {
+        "nom": "CSSF — le régulateur",
+        "url": "https://www.cssf.lu/fr/carrieres/",
+        "acces": "libre",
+        "niveau": "prioritaire",
+        "contenu": "Établissement public, soumis au quota de 5 %. Le miroir luxembourgeois de l'AMF.",
+        "faire": "Candidature sur offre et candidature spontanée. Mentionner l'expérience AMF dès la première ligne.",
+        "rythme": "1× / semaine"
+      },
+      {
+        "nom": "BCL — Banque centrale",
+        "url": "https://www.bcl.lu/fr/La-BCL/carrieres/",
+        "acces": "libre",
+        "niveau": "prioritaire",
+        "contenu": "Statistiques, reporting, risque opérationnel. Peu de postes, très stables.",
+        "faire": "Surveiller et postuler dès parution.",
+        "rythme": "1× / mois"
+      },
+      {
+        "nom": "EPSO — CAST Permanent",
+        "url": "https://eu-careers.europa.eu/en/job-opportunities/open-for-application",
+        "acces": "libre, inscription unique",
+        "niveau": "prioritaire",
+        "contenu": "Sélection permanente d'agents contractuels pour toutes les institutions, dont celles du Kirchberg.",
+        "faire": "S'inscrire une fois, cocher les profils Finance / Administration / Data, et demander les aménagements raisonnables dans le formulaire, justificatif médical à l'appui. L'inscription reste active et travaille toute seule.",
+        "rythme": "une seule fois"
+      },
+      {
+        "nom": "Conseil de l'UE — dispositif handicap",
+        "url": "https://www.consilium.europa.eu/en/general-secretariat/careers/job-opportunities-at-the-gsc/job-opportunities-for-persons-with-disabilities/",
+        "acces": "libre, candidature continue",
+        "niveau": "prioritaire",
+        "contenu": "Base de données réservée aux candidats ayant un handicap reconnu, pour recrutement direct comme agent contractuel (groupes II, III et IV), sans concours.",
+        "faire": "S'inscrire dans la base. Candidature ouverte en continu, sans date limite immédiate.",
+        "rythme": "une seule fois"
+      },
+      {
+        "nom": "Institutions du Kirchberg",
+        "url": "https://curia.europa.eu/jcms/jcms/Jo2_10298/fr/",
+        "acces": "libre",
+        "niveau": "ok",
+        "contenu": "Cour de justice, Office des publications, Eurostat, Cour des comptes, BEI/FEI, MES. Chacune a son propre portail de recrutement, distinct d'EPSO.",
+        "faire": "Faire le tour des six portails une fois par mois. Viser les fonctions documentaires et de contrôle.",
+        "rythme": "1× / mois"
+      },
+      {
+        "nom": "Communes du canton",
+        "url": "https://www.syvicol.lu/fr/emploi",
+        "acces": "libre",
+        "niveau": "langue",
+        "contenu": "Secrétariat communal, état civil, recette, archives. Trajets de 2 à 8 km depuis Sandweiler. Quota de 5 % applicable.",
+        "faire": "Vérifier systématiquement l'exigence de luxembourgeois avant d'investir du temps — c'est le filtre décisif ici.",
+        "rythme": "1× / mois"
+      },
+      {
+        "nom": "Fondation Autisme Luxembourg",
+        "url": "https://www.fal.lu/vacancies/",
+        "acces": "libre",
+        "niveau": "prioritaire",
+        "contenu": "Emplois support classiques (comptabilité, administration) chez un employeur qui connaît l'autisme de l'intérieur.",
+        "faire": "Surveiller, et candidater spontanément même sans offre ouverte.",
+        "rythme": "1× / mois"
+      },
+      {
+        "nom": "Cabinets spécialisés de la place",
+        "url": "https://www.austinbright.com/lu/",
+        "acces": "libre",
+        "niveau": "ok",
+        "contenu": "Austin Bright, Abiomis, Greenfield, Kepler Search, Le Grand & Associates, Manpower Financial Services, Randstad Finance, Sofitex, LHH, Arhis, S&you. Ce sont eux qui tiennent les missions de remédiation KYC.",
+        "faire": "Un courriel unique à chacun, positionné sur « missions de remédiation et de contrôle », pas sur « recherche d'emploi ». Ensuite, ne plus relancer : ils rappellent quand une mission tombe.",
+        "rythme": "une vague, puis passif"
+      },
+      {
+        "nom": "Annuaire des services agréés handicap",
+        "url": "https://mfsva.gouvernement.lu/fr/le-ministere/attributions/personnes-handicapees/services-agrees.html",
+        "acces": "libre (PDF)",
+        "niveau": "ok",
+        "contenu": "Liste officielle à jour des ateliers d'inclusion professionnelle et services d'accompagnement conventionnés.",
+        "faire": "À garder en réserve, et à consulter pour les ateliers de création (sérigraphie, encadrement) qui cherchent des encadrants à temps partiel.",
+        "rythme": "ponctuel"
+      },
+      {
+        "nom": "Plateformes de missions IA",
+        "url": "https://outlier.ai/",
+        "acces": "libre, inscription longue",
+        "niveau": "ok",
+        "contenu": "Outlier (Scale AI), Alignerr, Mindrift, Appen, TELUS Digital, Toloka. Travail écrit, à domicile, au casque.",
+        "faire": "S'inscrire tôt : plusieurs semaines de délai avant les premières tâches. Viser la file « expert » finance/conformité, mieux payée que la file généraliste. Éviter les plateformes de micro-tâches à 3 $/h.",
+        "rythme": "une seule fois"
+      },
+      {
+        "nom": "Canaux de vente artistique",
+        "url": "https://www.rotondes.lu/",
+        "acces": "libre",
+        "niveau": "ok",
+        "contenu": "Impression à la demande (Redbubble, Society6, INPRNT, Displate), boutiques (Etsy, Letzshop.lu), marchés physiques (Konschtmaart et Marché des créateurs aux Rotondes, marchés de Noël, boutiques du Mudam et de la Villa Vauban).",
+        "faire": "Ouvrir un seul canal d'abord, avec dix visuels. Les appels à participation des Rotondes paraissent quelques mois avant chaque édition.",
+        "rythme": "ponctuel"
+      }
+    ],
+    "note": "Deux sites seulement résistent aux scripts, et ce sont les plus intéressants : l'ADEM JobBoard (compte requis) et GovJobs (captcha). Ce n'est pas une mauvaise nouvelle — cela signifie que la majorité des candidats ne les consultent pas non plus, et que les agrégateurs commerciaux n'y puisent pas. Dix minutes par semaine sur ces deux-là valent mieux qu'une heure sur les autres."
+  }
 }
